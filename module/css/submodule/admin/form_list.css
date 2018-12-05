@@ -1,0 +1,29 @@
+div#form_list div.func_container div.form_item{
+	border-radius: 15px;
+	border: 1px solid var(--accent);
+	margin: 1%;
+	padding: 1%;
+}
+
+div#form_list div.func_container div.form_item div.status{
+	border-radius: inherit;
+	background: red;
+	float: right;
+	padding: 1%;
+}
+
+div#form_list div.func_container div.form_item div.status#pending{
+	background: var(--pending-status);
+	color: black;
+}
+
+div#form_list div.func_container div.form_item div.status#approved{
+	background: var(--approved-status);
+	color: white;
+}
+
+div#form_list div.func_container div.form_item div.status#denied{
+	background: var(--denied-status);
+	color: white;
+}
+

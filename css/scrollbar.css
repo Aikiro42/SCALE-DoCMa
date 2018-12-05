@@ -1,0 +1,30 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+	height: 10px;
+	background: var(--scrollbar);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /*box-shadow: inset 0 0 5px grey; */
+    border-radius: 5px;
+	background: var(--scrollbar-track);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 10px;
+	transition: var(--transition);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: var(--scrollbar-thumb-active);
+    border-radius: 10px;
+}

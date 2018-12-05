@@ -1,0 +1,8 @@
+div.subModuleWrapper div#strand_progress, div#outcome_progress{
+	float: left;
+	width: 40%;
+}
+
+div.subModuleWrapper div#strand_progress label, div#outcome_progress label{
+	margin-bottom: 3%;
+}

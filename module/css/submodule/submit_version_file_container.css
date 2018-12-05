@@ -1,0 +1,15 @@
+
+/*For the submit version file container*/
+div.form_download_list div.form_item label.submit_version_button input.version_upload{
+	display: none;
+}
+
+div.form_download_list div.form_item a.download_button:hover,p.delete_button:hover,label.submit_version_button:hover, div.version_list_button:hover{
+	color: vat(--button-text-hover);
+	background: var(--button-hover);
+}
+
+div.form_download_list div.form_item a.download_button:active,p.delete_button:active,label.submit_version_button:active, div.version_list_button:active{
+	color: vat(--button-text-active);
+	background: var(--button-active);
+}

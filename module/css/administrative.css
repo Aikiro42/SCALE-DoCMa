@@ -1,0 +1,69 @@
+div#admin_wrapper *{
+	font-family: "Segoe UI Light", "Consolas", monospace;
+}
+
+div#admin_wrapper{
+	background: var(--main);
+	border-radius: inherit;
+	color: white;
+}
+
+div#admin_wrapper div.admin_function{
+	background: var(--admin-function-button);
+	color: var(--admin-function-button-text);
+	border-radius: 15px;
+	margin: 1%;
+}
+
+div#admin_wrapper div.admin_function h2.admin_button{
+	background: var(--admin-function-button);
+	color: var(--admin-function-button-text);
+	padding: 1%;
+	border-radius: inherit;
+	transition: var(--transition);
+	cursor: pointer;
+	text-align: center;
+}
+
+
+div#admin_wrapper div.admin_function h2.admin_button:hover{
+	background: var(--admin-function-button-hover);
+	color: var(--admin-function-button-text-hover);
+}
+
+div#admin_wrapper div.admin_function h2.admin_button:active{
+	background: var(--admin-function-button-active);
+	color: var(--admin-function-button-text-active);
+}
+
+div#admin_wrapper div.admin_function div.func_container{
+	background: white;
+	color: black;
+	padding: 1%;
+	border-radius: inherit;
+	display: none;
+}
+
+/*Uniform CSS for submit button*/
+div#add_user div.func_container div.submit_button{
+	background: var(--button);
+	color: var(--button-text);
+	padding: 1%;
+	margin: 1%;
+	border-radius: inherit;
+	text-align: center;
+	cursor: pointer;
+	font-size: 1.25em;
+	transition: var(--transition);
+}
+
+div#add_user div.func_container div.submit_button:hover{
+	background: var(--button-hover);
+	color: var(--button-text-hover);
+}
+
+
+div#add_user div.func_container div.submit_button:active{
+	background: var(--button-active);
+	color: var(--button-text-active);
+}

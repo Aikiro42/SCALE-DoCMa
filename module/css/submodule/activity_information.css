@@ -1,0 +1,36 @@
+div.subModuleWrapper div.strand_list_container, div.objective_list_container{
+	display: inline-block;
+	width: 40%;
+	float: left;
+	margin-right: 3%;
+}
+
+div.subModuleWrapper p.info_p{
+	padding: 1%;
+	border: 1px solid var(--accent-2);
+	border-radius: 10px;
+	margin-bottom: 2%;
+	margin-top: 1%;
+}
+
+
+div.subModuleWrapper ul{
+	list-style: none;	
+}
+
+div.subModuleWrapper ul li{
+	padding: 2%;
+	margin-bottom: 1%;
+	background: var(--accent);
+	color: var(--accent-text);
+	border-radius: 15px;
+	text-align: center;
+}
+
+div.subModuleWrapper ul li div.achieved_badge{
+	background: var(--achieved-badge);
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	float: right;
+}

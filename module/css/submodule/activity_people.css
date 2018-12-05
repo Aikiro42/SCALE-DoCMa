@@ -1,0 +1,25 @@
+div#manage_people_container div.add_people_button{
+	background: var(--button);
+	color: var(--button-text);
+	padding: 1%;
+	display: inline-block;
+	transition: var(--transition);
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+div#manage_people_container div.add_people_button:hover{
+	background: var(--button-hover);
+	color: var(--button-text-hover);
+}
+
+div#manage_people_container div.add_people_button:active{
+	background: var(--button-active);
+	color: var(--button-text-active);
+}
+
+div#manage_people_container h3.no_assoc_person_error{
+	color: var(--no-assoc-person-error-text);
+	text-align: center;
+	padding: 1%;
+}

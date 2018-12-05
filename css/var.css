@@ -1,0 +1,182 @@
+:root{
+	/*Color variables*/
+	--gray: rgb(100,100,100);
+	--gray-hover: rgb(150,150,150);
+	--gray-active: rgb(50,50,50);
+	
+	--gray-transluscent: rgba(100,100,100,0.5);
+	--black-transluscent: rgba(0,0,0,0.5);
+	
+	--light-gray: rgb(200,200,200);
+	
+	--blue: rgb(71, 112, 178);
+	
+	--dark-blue: rgb(56, 82, 124);
+	--dark-blue-hover: rgb(106, 132, 174);
+	--dark-blue-active: rgb(31, 57, 99);
+	
+	--light-blue: rgb(93, 135, 204);
+	
+	--orange-hover: rgb(255, 187, 61);
+	--orange-active: rgb(205, 137, 11);
+	
+	--dark-gray: rgb(50,50,50);
+	--gray-alpha: rgba(100,100,100,0.5);
+	
+	--gold: rgb(255, 208, 0);
+	
+	--steel-blue: rgb(135, 153, 181);
+	
+	--red: rgb(206, 41, 41);
+	--red-hover: rgb(255, 91, 91);
+	--red-active: rgb(196, 0, 0);
+	
+	--green: rgb(41,206,41);
+	--green-hover: rgb(91,255,91);
+	--green-active: rgb(0,196,0);
+	
+	--transparent: rgba(0,0,0,0);
+	
+	/*General Variables*/
+	
+	--main: var(--blue);
+	--main-background: white;
+	--main-text: black;
+	
+	--field-background: white;
+	--field-text: black;
+	
+	--link-color: blue;
+	
+	--accent: var(--dark-blue);
+	--accent-text: white;
+	
+	--accent-2: var(--light-gray);
+	--accent-2-text: black;
+	
+	--important: var(--red);
+	--important-text: var(--red);
+	--important-accent: var(--red);
+	
+	--scrollbar: var(--transparent);
+	--scrollbar-track: var(--transparent);
+	--scrollbar-thumb: var(--steel-blue);
+	--scrollbar-thumb-hover: var(--orange-hover);
+	--scrollbar-thumb-active: var(--orange-active);
+
+	--border: var(--light-blue);
+	--border-2: black;
+	
+	--overlay: var(--black-transluscent);
+	
+	--button: var(--dark-blue);
+	--button-hover: var(--orange-hover);
+	--button-active: var(--orange-active);
+	
+	--button-text: white;
+	--button-text-hover: black;
+	--button-text-active: white;
+	
+	--radio: var(--gray);
+	--radio-hover: var(--gray-hover);
+	--radio-checked: var(--light-blue);
+	
+	--checkbox: var(--gray);
+	--checkbox-hover: var(--gray-hover);
+	--checkbox-checked: var(--light-blue);
+	
+	--warning: var(--red);
+	--warning-text: white;
+	
+	--warning-hover: var(--button-hover);
+	--warning-text-hover: var(--button-text-hover);
+	
+	--warning-active: var(--button-active);
+	--warning-text-active: var(--button-text-active);
+	
+	
+	--text-default: var(--dark-blue);
+	
+	--transition: background 0.1s, color 0.1s;
+	
+	/*Specific Variables*/
+	
+	--no-profile: var(--light-gray);
+	--header-text: white;
+	--header-nav-text: white;
+
+	--person-item-border: var(--light-gray);
+	--person-item: white;
+	--person-item-hover: var(--light-gray);
+	--person-item-active: var(--gray);
+	
+	
+	--activity-item-border: var(--light-gray);
+	--activity-item: white;
+	--activity-item-hover: var(--light-gray);
+	--activity-item-active: var(--gray);
+	
+	--warning-unapproved: var(--red);
+	
+	--version-list-item-background: var(--light-blue);
+	--version-list-item-text: var(--white);
+
+	--version-list-item-button: var(--button);
+	--version-list-item-button-hover: var(--button-hover);
+	--version-list-item-button-active: var(--button-active);
+	
+	--version-list-item-button-text: var(--button-text);
+	--version-list-item-button-text-hover: var(--button-text-hover);
+	--version-list-item-button-text-active: var(--button-text-active);
+	
+	--admin-function-button: white;
+	--admin-function-button-hover: white;
+	--admin-function-button-active: var(--light-gray);
+
+	--admin-function-button-text: black;
+	--admin-function-button-text-hover: var(--light-gray);
+	--admin-function-button-text-active: black;
+
+	--pending-status: var(--gold);
+	--approved-status: var(--green);
+	--denied-status: var(--red);
+	
+	--pending-status-text: black;
+	--approved-status-text: white;
+	--denied-status-text: white;
+	
+	--manage-people-button: white;
+	--manage-people-button-text: black;
+	
+	--manage-people-button-hover: var(--light-gray);
+	--manage-people-button-text-hover: black;
+	
+	--manage-people-button-active: var(--dark-gray);
+	--manage-people-button-text-active: white;
+	
+	--no-submitted-form-error-text: white;
+	--no-assoc-person-error-text: red;
+	
+	--achieved-badge: var(--green);
+	
+	/*approve and deny buttons*/
+	
+	--approve-button: var(--green);
+	--approve-button-text: white;
+	
+	--approve-button-hover: var(--green-hover);
+	--approve-button-text-hover: black;
+	
+	--approve-button-active: var(--green-active);
+	--approve-button-text-active: white;
+	
+	--deny-button: var(--red);
+	--deny-button-text: white;
+	
+	--deny-button-hover: var(--red-hover);
+	--deny-button-text-hover: white;
+	
+	--deny-button-active: var(--red-active);
+	--deny-button-text-active: white;
+	
+}

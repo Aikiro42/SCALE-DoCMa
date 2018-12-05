@@ -1,0 +1,9 @@
+div#audit_trail_log div.func_container div.log_entry{
+	
+}
+
+div#audit_trail_log div.func_container h2#no_entry_warning{
+	text-align: center;
+	color: red;
+	
+}

@@ -1,0 +1,89 @@
+
+/*===[Pending Actions CSS]===================================================*/
+
+div.moduleWrapper div#pendingActions p#refresh_pending_actions{
+	background: var(--button);
+	color: var(--button-text);
+	border-radius: 15px;
+	padding: 1%;
+	text-align: center;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+div.moduleWrapper div#pendingActions p#refresh_pending_actions:hover{
+	background: var(--button-hover);
+	color: var(--button-text-hover);
+}
+
+div.moduleWrapper div#pendingActions p#refresh_pending_actions:active{
+	background: var(--button-active);
+	color: var(--button-text-active);
+}
+
+div.moduleWrapper div#pendingActions div.pending_item{
+	border: 1px solid var(--border);
+	margin: 1%;
+	padding: 1%;
+	border-radius: 25px;
+}
+
+
+div.moduleWrapper div#pendingActions div.approve_button, div.deny_button, a.download_button{
+	font-weight: bold;
+	display: inline-block;
+	float: right;
+	padding: 1%;
+	margin-left: 1%;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+div.moduleWrapper div#pendingActions div.approve_button{
+	background: var(--approve-button);
+	color: var(--approve-button-text);
+}
+
+
+div.moduleWrapper div#pendingActions div.approve_button:hover{
+	background: var(--approve-button-hover);
+	color: var(--approve-button-text-hover);
+}
+
+div.moduleWrapper div#pendingActions div.approve_button:active{
+	background: var(--approve-button-active);
+	color: var(--approve-button-text-active);
+}
+
+div.moduleWrapper div#pendingActions div.deny_button{
+	background: var(--deny-button);
+	color: var(--deny-button-text);
+}
+
+div.moduleWrapper div#pendingActions div.deny_button:hover{
+	background: var(--deny-button-hover);
+	color: var(--deny-button-text-hover);
+}
+
+div.moduleWrapper div#pendingActions div.deny_button:active{
+	background: var(--deny-button-active);
+	color: var(--deny-button-text-active);
+}
+
+div.moduleWrapper div#pendingActions a.download_button{
+	background: var(--button);
+	color: var(--button-text);
+	text-decoration: none;
+}
+
+div.moduleWrapper div#pendingActions a.download_button:hover{
+	background: var(--button-hover);
+	color: var(--button-text-hover);
+}
+
+div.moduleWrapper div#pendingActions a.download_button:active{
+	background: var(--button-active);
+	color: var(--button-text-active);
+}
+

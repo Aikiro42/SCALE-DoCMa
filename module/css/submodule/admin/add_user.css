@@ -1,0 +1,114 @@
+div#add_user div.func_container label.generic_label{
+	font-weight: bold;
+	width: 25%;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	text-align: right;
+}
+
+div#add_user div.func_container div#autogen_id_checkbox_container{
+	margin-left: 30%;
+	margin-top: -0.5%;
+	margin-bottom: 1%;
+}
+
+div#add_user div.func_container label#user_id_label, input#user_id{
+	margin-bottom: 0;
+}
+
+
+
+div#add_user div.func_container label span.datatype_info{
+	font-style: italic;
+	font-family: "Consolas", monospace;
+	font-size: 0.75em;
+	font-weight: normal;
+	margin-right: 3%;
+	color: var(--blue);
+}
+
+div#add_user div.func_container input.field{
+	font-family: 'Consolas', monospace;
+	display: block;
+	width: 50%;
+	height: 30px;
+	border-radius: 5px;
+	margin-bottom: 1%;
+	border: 1px solid var(--accent);
+}
+
+div#add_user div.func_container input.field#user_id{
+	background: none;
+}
+
+div#add_user div.func_container p.validation_error{
+	color: red;
+	font-style: italics;
+	text-align: center;
+	display: none;
+}
+
+
+div#add_user div.func_container div#add_user_rb_container{
+	width: 50%;
+	float: left;
+}
+
+
+div#add_user div.func_container div#add_user_rb_container label.custom_radio_container{
+	width: auto;
+	clear: both;
+	text-align: left;
+	font-size: inherit;
+}
+
+/*
+
+Abandoned, kept j.i.c.
+
+div#add_user div.func_container form{
+	margin: auto;
+}
+
+div#add_user div.func_container form img#profile_pic_preview{
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	margin-left: 1%;
+	border-radius: 15px;
+	border: 1px solid var(--accent);
+}
+
+div#add_user div.func_container form label#pic_submit_button input{
+	display: none;
+}
+
+
+div#add_user div.func_container form label#pic_submit_button{
+	background: var(--button);
+	color: var(--button-text);
+	float: left;
+	display: inline-block;
+	text-align: center;
+	padding: 1%;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: var(--transition);
+	margin-left: 25%;
+}
+
+div#add_user div.func_container form label#pic_submit_button:hover{
+	background: var(--button-hover);
+	color: var(--button-text-hover);
+}
+
+div#add_user div.func_container form label#pic_submit_button:active{
+	background: var(--button-active);
+	color: var(--button-text-active);
+}
+
+
+*/

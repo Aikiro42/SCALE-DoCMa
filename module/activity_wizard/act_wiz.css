@@ -1,0 +1,61 @@
+div#act_wiz_wrapper input#activity_name{
+	border: 1px solid var(--border);
+	border-radius: 15px;
+	margin-top: 0.5%;
+	padding: 0.5%;
+	width: 100%;
+	font-size: 1.125em;
+}
+
+div#act_wiz_wrapper h3{
+	margin-top: 2%;
+}
+
+div#instructions, div#all_done{
+	padding: 1%;
+	border-radius: 15px;
+	border: 1px solid var(--important-accent);
+	font-weight: bold;
+}
+
+div#all_done{
+	margin-top: 3%;
+	display: none;
+}
+
+textarea{
+	resize: vertical;
+	width: 100%;
+	height: 150px;
+	padding: 0.5%;
+	border: 1px solid var(--accent);
+	border-radius: 10px;
+}
+
+span.propose_activity_require_field{
+	font-style: italic;
+	font-weight: bold;
+	color: red;
+	display: none;
+}
+
+div#submit_activity_button{
+	background: var(--button);
+	color: var(--button-text);
+	display: inline-block;
+	padding: 1%;
+	margin-top: 2%;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+div#submit_activity_button:hover{
+	background: var(--button-hover);
+	color: var(--button-text-hover);
+}
+
+div#submit_activity_button:active{
+	background: var(--button-active);
+	color: var(--button-text-active);
+}

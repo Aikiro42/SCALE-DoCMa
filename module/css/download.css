@@ -1,0 +1,37 @@
+div.moduleWrapper h1.download{
+	margin: 2.5%;
+}
+
+div.moduleWrapper table#downloadTable{
+	width: 100%;
+}
+
+div.moduleWrapper table#downloadTable tbody tr td.link{
+	background: var(--button);
+	border-top-left-radius: 100px;
+	border-bottom-left-radius: 100px;
+	font-weight: bold;
+}
+
+div.moduleWrapper table#downloadTable tbody tr td.link:hover{
+	background: var(--button-hover);
+}
+
+div.moduleWrapper table#downloadTable tbody tr td.explain{
+	border: 1px solid var(--border);
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+}
+
+div.moduleWrapper table#downloadTable tbody tr td a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	padding: 1%;
+}
+
+div.moduleWrapper table#downloadTable tbody tr td span#explanation{
+	display: block;
+	padding: 1%;
+}

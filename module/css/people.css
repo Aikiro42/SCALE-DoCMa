@@ -1,0 +1,97 @@
+
+div#person_search_bar_container{
+	margin: 1%;
+}
+
+div#person_search_bar_container div#search_button{
+	background: var(--button);
+	color: var(--button-text);
+	width: 9%;
+	float: right;
+	height: 60px;
+	border-radius: 15px;
+	line-height: 60px;
+	text-align: center;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+div#person_search_bar_container div#search_button:hover{
+	background: var(--button-hover);
+	color: var(--button-text-hover);
+}
+
+div#person_search_bar_container div#search_button:active{
+	background: var(--button-active);
+	color: var(--button-text-active);
+}
+
+input#person_search_bar{
+	padding: 1%;
+	height: 60px;
+	border-radius: 15px;
+	border: 1px solid var(--accent);
+	font-size: 1.5em;
+	width: 90%;
+}
+
+div.moduleWrapper div#person_list{
+	max-height: 60%;
+	overflow-y: scroll;
+}
+
+div.moduleWrapper div#person_list div.person_item{
+	border-radius: 15px;
+	border-top: 1px solid var(--person-item-border);
+	border-bottom: 1px solid var(--person-item-border);
+	padding: 1%;
+	margin: 1%;
+	transition: var(--transition);
+	cursor: pointer;
+}
+
+div.moduleWrapper div#person_list div.person_item:hover{
+	background: var(--person-item-hover);
+}
+
+div.moduleWrapper div#person_list div.person_item:hover img.person_pic{
+	background: white;
+}
+
+div.moduleWrapper div#person_list div.person_item:active{
+	background: var(--person-item-active);
+}
+
+div.moduleWrapper div#person_list div.person_item img.person_pic{
+	background: var(--no-profile);
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+	float: left;
+}
+
+div.moduleWrapper div#person_list div.person_item h2{
+	line-height: 50px;
+	margin-left: 10%;
+}
+
+
+div.moduleWrapper div#person_list div.person_item p.user_id{
+	line-height: 50px;
+	float: right;
+	font-family: 'Consolas', monospace;
+}
+
+div.moduleWrapper div#person_list div.person_item div.person_info{
+	margin-top: 1%;
+	display: none;
+}
+
+div.moduleWrapper div#person_list div.person_item div.person_info p{
+	margin-bottom: 1%;
+}
+
+div.moduleWrapper div#person_list div.person_item div.person_info p span.person_info_label{
+	font-weight: bold;
+}
+

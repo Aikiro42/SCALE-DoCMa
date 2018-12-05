@@ -1,0 +1,59 @@
+div#wrapper div#login{
+	background: var(--main);
+	color: white;
+	margin: 10% auto;
+	margin-bottom: 1%;
+	width: 15%;
+    border-radius: 25px;
+	border: 1px solid var(--border);
+	padding: 1%;
+}
+
+div#wrapper div#login form{
+	margin: auto;
+}
+
+div#wrapper div#login form div.fields{
+	margin: 10% auto;
+}
+
+div#wrapper div#login form div.fields span.fieldLabels{
+	display: block;
+	text-align: center;
+}
+
+div#wrapper div#login form div.fields input.credentials{
+	display: block;
+	margin: 1% auto;
+	padding: 5%;
+	background: white;
+	border: 1px solid var(--border);
+	border-radius: 10px;
+}
+
+div#wrapper div#login form div#buttons{
+	text-align: center;
+}	
+
+div#wrapper div#login form div#buttons .buttons{
+	background: var(--button);
+    color: white;
+    border: none;
+    padding: 5%;
+	width: 40%;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+div#wrapper div#login form div#buttons .buttons:hover{
+	background: var(--button-hover);
+}
+
+div#wrapper div#login form div#buttons .buttons:active{
+	background: var(--button-active);
+}
+
+footer{
+	text-align: center;
+}
+

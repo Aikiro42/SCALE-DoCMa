@@ -1,0 +1,203 @@
+$(function(){
+	
+	var ual_id_var = -1;
+	
+	var are_there_errors = false;
+	
+	var default_image = "img/default.png";
+	
+	var autogen_id = false;
+	
+	
+	function is_user_id_valid(){
+		var val = $('input#user_id');
+		var is_id_NaN = isNaN(parseInt($(this).val()));
+		
+		if(!autogen_id && (is_id_NaN && val.length > 0)){
+			return false;
+		}else{
+			return true;
+		}
+		
+	}
+	
+	/*
+	
+	Abandoned, kept j.i.c.
+	
+	var file_data;
+	var image_uploaded = false;
+	var fileTypes = ['jpg', 'jpeg', 'png', 'gif'];
+	*/
+	
+	$('input[name=ual]').click(function(){
+		ual_id_var = parseInt($(this).val());
+		console.log(ual_id_var);
+	});
+	
+	$('input[name=autogen_id]').off().click(function(){
+		autogen_id = !autogen_id;
+		console.log('autogen_id' + autogen_id);
+	});
+	
+	/* 
+	
+	Abandoned, kept j.i.c.
+	
+	$('input#profile_pic_upload').change(function(){
+		
+		console.log('image uploaded...');
+		
+		var input = this;
+		
+		if(input.files && input.files[0]){
+			
+			var reader = new FileReader();
+			var extension = input.files[0].name.split('.').pop().toLowerCase(),  //file extension from input file
+				is_image = fileTypes.indexOf(extension) > -1;  //is extension in acceptable types
+			
+			if(is_image){
+				
+					reader.onload = function(e) {
+						$('img#profile_pic_preview').attr('src', e.target.result);
+					}
+
+					reader.readAsDataURL(input.files[0]);
+					
+					file_data = $(this).prop('files')[0];
+					
+					image_uploaded = true;
+					
+				}else{
+					alert('Please upload an image of the following types:'
+					+'\n *.jpeg, *.jpg, *.gif');
+				}
+				
+		}else{
+			alert('what could trigger this? something`s wrong.');
+		}
+		
+	});
+	
+	*/
+	
+	$('input#username').change(function(){
+		$.ajax({
+			method: 'post',
+			data: {username_check: $(this).val()},
+			url: 'applications/check_duplicate_username.php',
+			success: function(data){
+				var warning_sign = $('p#duplicate_username_error');
+				if(data == 'true'){
+					warning_sign.slideDown();
+					are_there_errors = true;
+				}else{
+					warning_sign.slideUp();
+					are_there_errors = false;
+				}
+			}
+		});
+	});
+	
+	$('input#user_id').change(function(){
+			
+		var is_id_NaN = isNaN(parseInt($(this).val()));
+		//console.log('isNaN('+parseInt($(this).val())+') : '+isNaN(parseInt($(this).val)));
+		
+		var validation_error = $('p#user_id_validation_error');
+		
+		if(!is_user_id_valid()){
+			validation_error.slideDown();
+			are_there_errors = true;
+			return;
+		}else{
+			validation_error.slideUp();
+			are_there_errors = false;
+		}
+		
+		$.ajax({
+			method: 'post',
+			data: {user_id_check: $(this).val()},
+			url: 'applications/check_duplicate_id.php',
+			success: function(data){
+				var warning_sign = $('p#duplicate_user_id_error');
+				if(data == 'true'){
+					warning_sign.slideDown();
+					are_there_errors = true;
+				}else{
+					warning_sign.slideUp();
+					are_there_errors = false;
+				}
+			}
+		});
+	
+	});
+	
+	$('div#add_user_submit').click(function(){
+		//validation
+		var username_field = $('input#username');
+		var password_field = $('input#password');
+		var user_id_field = $('input#user_id');
+		var firstName_field = $('input#firstName');
+		var lastName_field = $('input#lastName');
+		var email_field = $('input#email');
+		
+		var valid = false;
+		valid = username_field.val().length > 0;
+		console.log('pass 1: ' + valid);
+		valid = password_field.val().length > 0;
+		console.log('pass 2: ' + valid);
+		valid = user_id_field.val().length > 0;
+		console.log('pass 3: ' + valid);
+		valid = firstName_field.val().length > 0;
+		console.log('pass 4: ' + valid);
+		valid = lastName_field.val().length > 0;
+		console.log('pass 5: ' + valid);		
+		valid = email_field.val().length > 0;
+		console.log('pass 6: ' + valid);		
+		valid = ual_id_var != -1;
+		console.log('pass 7: ' + valid);
+		valid = !are_there_errors;
+		console.log('pass 8: ' + valid);
+		console.log('are there errors? ' + are_there_errors);
+		
+		/*
+		
+		var fileVar = {};
+		if(image_uploaded){
+			fileVar = file_data;
+			default_image = '';
+		}
+		
+		*/
+		
+		
+		if(valid){
+			$.ajax({
+				method: 'post',
+				data: {
+					username: username_field.val(),
+					password_var:  password_field.val(),
+					user_id:  user_id_field.val(),
+					firstName:  firstName_field.val(),
+					lastName:  lastName_field.val(),
+					email:  email_field.val(),
+					profile_pic: default_image,
+					//file: fileVar;
+					ual_id: ual_id_var
+				},
+				url: 'applications/admin/add_user_app.php',
+				success: function(){
+					alert('Successfully added new user!');
+					$('div#add_user')
+				},
+				error: onError
+			});
+		}else{
+			alert('Please fill out all the fields.');
+		}
+
+		
+	});
+	
+});

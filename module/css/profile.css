@@ -1,0 +1,114 @@
+div.moduleWrapper div#userInfo{
+	margin: 1%;
+	border: 1px solid black;
+	border-radius: 25px;
+	padding: 1%;
+}
+
+div.moduleWrapper div#userInfo img#profilePic{
+	width: 150px;
+	height: 150px;
+	border-radius: 25px;
+	background-color: var(--no-profile);
+	/*
+	background-image: url("../../img/13-01104.jpg");
+	background-position: center;
+	background-size: contain;
+	*/
+	float: left;
+	margin-right: 1%;
+}
+
+div.moduleWrapper div#userInfo h2#fullName{
+	font-size: 2em;
+}
+
+
+div.moduleWrapper div#userInfo p#email, p#user_id, p#ual_name{
+	font-family: monospace;
+}
+
+
+div.moduleWrapper div#userInfo span.user_cred_label{
+	width: 500px;
+	text-align: right;
+}
+
+div.moduleWrapper div#userInfo a#logout_button, div#more_button{
+	background: var(--button);
+	color: var(--button-text);
+	display: block;
+	padding: 1%;
+	float: right;
+	text-decoration: none;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+div.moduleWrapper div#userInfo div#more_button{
+	margin-right: 1%;
+}
+
+div.moduleWrapper div#userInfo a#logout_button:hover, div#more_button:hover{
+	color: var(--button-text-hover);
+	background: var(--button-hover);
+}
+
+div.moduleWrapper div#userInfo a#logout_button:active, div#more_button:active{
+	color: var(--button-text-active);
+	background: var(--button-active);
+}
+
+/*====================[More Information]===================*/
+
+div#more_information h2{
+	margin-top: 2%;
+	border-bottom: 1px solid black;
+	display: none;
+}
+
+/*=========================================================*/
+
+/*============[Details table]============*/
+
+table#clubs_int th, table#clubs_ext th{
+	width: 1%;
+	background: var(--main);
+	color: white;
+}
+
+/*submodule container CSS*/
+div.moduleWrapper div#pendingActions, div#AssocActivities{
+	margin: 1%;
+	border: 1px solid var(--border-2);
+	border-radius: 25px;
+	padding: 1%;
+}
+
+div.moduleWrapper div#action_buttons{
+	margin: 1%;
+	padding: 3%;
+	/*
+	border-radius: 25px;
+	border: 1px solid black;
+	*/
+}
+
+div.moduleWrapper div#action_buttons div.butt{
+	padding: 1%;
+	border-radius: 10px;
+	background: var(--button);
+	color: white;
+	display: inline;
+	cursor: pointer;
+	transition: background 0.05s;
+}
+
+div.moduleWrapper div#action_buttons div.butt:hover{
+	background: var(--button-hover);
+}
+
+div.moduleWrapper div#action_buttons div.butt:active{
+	background: var(--button-active);
+}

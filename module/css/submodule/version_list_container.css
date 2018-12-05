@@ -1,0 +1,43 @@
+
+div.form_item div.version_list{
+	margin-top: 1%;
+	display: none;
+}
+
+div.form_item div.version_list h2{
+	margin-bottom: 1%;
+}
+
+div.form_item div.version_list_item{
+	background: var(--version-list-item-background);
+	color: var(--version-list-item-background-text);
+	border-radius: 10px;
+	padding: 1%;
+	margin-top: 1%;
+}
+
+div.form_item div.version_list_item p.version_id{
+	/*how to vertically align*/
+	float: left;
+	display: inline-block;
+	padding: 1%;
+	font-size: 1.25em;
+	font-family: "Consolas", monospace;
+}
+
+div.form_item div.version_list_item a.version_download_button, div.version_delete_button{
+	background: var(--version-list-item-button);
+	color: var(--version-list-item-button-text);
+	float: right;
+	padding: 1%;
+	margin-left: 1%;
+	border-radius: 10px;
+	cursor: pointer;
+	text-decoration: none;
+	transition: var(--transition);
+}
+
+div.form_item div.version_list_item a.version_download_button:hover, div.version_delete_button:hover{
+	background: var(--version-list-item-button-hover);
+	color: var(--version-list-item-button-text-hover);
+}

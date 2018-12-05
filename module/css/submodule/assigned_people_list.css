@@ -1,0 +1,44 @@
+
+div#manage_people_container div#assigned_people_container div.assigned_person_item{
+	padding: 1%;
+	border-top: 1px solid var(--person-item-border);
+	border-bottom: 1px solid var(--person-item-border);
+	border-radius: 10px;
+	margin: 0.5%;
+}
+
+div#manage_people_container div#assigned_people_container div.assigned_person_item h2.assigned_person_name{
+	float: left;
+}
+
+div#manage_people_container div#assigned_people_container div.assigned_person_item p.assigned_person_id{
+	float: left;
+	line-height: 2em;
+	margin-left: 1%;
+}
+
+div#manage_people_container div#assigned_people_container div.assigned_person_item p.assigned_person_affiliation{
+	clear: both;
+}
+
+div#manage_people_container div#assigned_people_container div.assigned_person_item div.unassign_person_button{
+	background: var(--button);
+	color: var(--button-text);
+	display: inline-block;
+	padding: 1%;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: var(--transition);
+	float: right;
+}
+
+div#manage_people_container div#assigned_people_container div.assigned_person_item div.unassign_person_button:hover{
+	background: var(--button-hover);
+	color: var(--button-text-hover);
+}
+
+
+div#manage_people_container div#assigned_people_container div.assigned_person_item div.unassign_person_button:active{
+	background: var(--button-active);
+	color: var(--button-text-active);
+}

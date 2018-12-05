@@ -1,0 +1,136 @@
+div#submit_buttons, div.form_download_list{
+	border: 1px solid var(--border);
+	border-radius: 10px;
+	padding: 1%;
+}
+
+div#submit_buttons label.submit_button input{
+	display: none;
+}
+
+/*===[For the buttons used to manage the people involved]==============================*/
+
+div#manage_people_container{
+	margin-bottom: 1%;
+	border: 1px solid var(--accent);
+	border-radius: 15px;
+}
+
+div#manage_people_container h2#manage_people_button{
+	background: var(--manage-people-button);
+	color: var(--manage-people-button-text);
+	padding: 1%;
+	text-align: center;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+div#manage_people_container h2#manage_people_button:hover{
+	background: var(--manage-people-button-hover);
+	color: var(--manage-people-button-text-hover);
+}
+
+div#manage_people_container h2#manage_people_button:active{
+	background: var(--manage-people-button-active);
+	color: var(--manage-people-button-text-active);
+}
+
+div#manage_people_container div#manage_people_content{
+	display: none;
+	padding: 1%;
+}
+
+/*===[For the buttons used to submit new forms]========================================*/
+
+div#submit_buttons label.submit_button{
+	background: var(--button);
+	color: var(--button-text);
+	float: left;
+	margin: 1px;
+	padding: 1%;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+div#submit_buttons label.submit_button:hover{
+	color: var(--button-text-hover);
+	background: var(--button-hover);
+}
+
+div#submit_buttons label.submit_button:active{
+	color: var(--button-text-active);
+	background: var(--button-active);
+}
+
+div#submit_buttons input.form_submit_button{
+	display: none;
+}
+
+/*================================================================================*/
+
+div.form_download_list{
+	margin-top: 1%;
+	border: none;
+	background: var(--accent);
+	color: white;
+	display: none;
+}
+
+div.form_download_list div.form_item{
+	background: white;
+	color: black;
+	padding: 1%;
+	border-radius: 5px;
+	margin-top: 1%;	
+}
+
+div.form_download_list div.form_item p.form_name{
+	float: left;
+}
+
+div.form_download_list div.form_item div.form_status{
+	background: black;
+	color: white;
+	padding: 1%;
+	border-radius: inherit;
+	float: right;
+}
+
+div.form_download_list div.form_item div.form_status#pending_status{
+	background: var(--pending-status);
+	color: var(--pending-status-color);
+}
+
+div.form_download_list div.form_item div.form_status#approved_status{
+	background: var(--approved-status);
+	color: var(--approved-status-color);
+}
+
+div.form_download_list div.form_item div.form_status#denied_status{
+	background: var(--denied-status);
+	color: var(--denied-status-color);
+}
+
+
+div.form_download_list div.form_item a.download_button,p.delete_button,label.submit_version_button, div.version_list_button{
+	color: var(--button-text);
+	background: var(--button);
+	margin-left: 1%;
+	float: right;
+	padding: 1%;
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration: none;
+	transition: background 0.05s;
+}
+
+div.form_download_list h3.no_submitted_form_error{
+	color: var(--no-submitted-form-error-text);
+	text-align: center;
+	padding: 1%;
+}
+
+
+/*For the version list container*/

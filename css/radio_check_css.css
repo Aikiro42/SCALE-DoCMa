@@ -1,0 +1,143 @@
+
+/*==[CUSTOM RADIO BUTTON CSS]==========*/
+
+label.custom_radio_container{
+	display: block;
+	cursor: pointer;
+	clear: both;
+	margin: 1% auto;
+}
+
+label.custom_radio_container input{
+	position: absolute;
+	opacity: 0;
+}
+
+label.custom_radio_container span.custom_radio{
+	display: block;
+	background: var(--radio);
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	margin-right: 10px;
+	float: left;
+}
+
+label.custom_radio_container:hover input ~ span.custom_radio{
+	background: var(--radio-hover);
+}
+
+label.custom_radio_container input:checked ~ span.custom_radio{
+	background: var(--radio-checked);
+}
+
+label.custom_radio_container span.custom_radio:after{
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+label.custom_radio_container input:checked ~ span.custom_radio:after {
+	display: block;
+}
+
+label.custom_radio_container span.custom_radio:after{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+
+/*==[CUSTOM CHECKBOX CSS]==========*/
+
+/*
+
+Required HTML
+
+<label class="custom_checkbox_container">One
+	<input type="checkbox" checked="checked">
+	<span class="custom_checkbox"></span>
+</label>
+
+<label class="custom_checkbox_container">Two
+	<input type="checkbox">
+	<span class="custom_checkbox"></span>
+</label>
+
+<label class="custom_checkbox_container">Three
+	<input type="checkbox">
+	<span class="custom_checkbox"></span>
+</label>
+
+<label class="custom_checkbox_container">Four
+	<input type="checkbox">
+	<span class="custom_checkbox"></span>
+</label>
+
+*/
+
+.custom_checkbox_container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin: 1% auto;
+  cursor: pointer;
+}
+
+/* Hide the browser's default checkbox */
+.custom_checkbox_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.custom_checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: var(--checkbox);
+}
+
+/* On mouse-over, add a grey background color */
+.custom_checkbox_container:hover input ~ .custom_checkbox {
+  background-color: var(--checkbox-hover);
+}
+
+/* When the checkbox is checked, add a blue background */
+.custom_checkbox_container input:checked ~ .custom_checkbox {
+  background-color: var(--checkbox-checked);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.custom_checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.custom_checkbox_container input:checked ~ .custom_checkbox:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.custom_checkbox_container .custom_checkbox:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+

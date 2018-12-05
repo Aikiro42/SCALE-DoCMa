@@ -1,0 +1,10 @@
+div.moduleWrapper{
+	padding: 3%;
+	height: 65%;
+	overflow-y: scroll;
+}
+
+div.subModuleWrapper{
+	padding: 1%;
+}
+

@@ -1,0 +1,117 @@
+/*div#edit_user div.func_container */
+
+div#edit_user div.func_container{
+	padding: 1%;
+}
+
+div#edit_user div.func_container input#admin_user_search_bar{
+	padding: 1%;
+	float: left;
+	border: 1px solid var(--accent);
+	border-radius: 15px;
+	width: 90%;
+}
+
+div#edit_user div.func_container div#admin_user_search_button{
+	background: var(--button);
+	color: var(--button-text);
+	border-radius: 15px;
+	padding: 1%;
+	cursor: pointer;
+	transition: var(--transition);
+	float: right;
+	width: 7%;
+}
+
+div#edit_user div.func_container div#admin_user_search_button:hover{
+	background: var(--button-hover);
+	color: var(--button-text-hover);
+}
+
+
+div#edit_user div.func_container div#admin_user_search_button:active{
+	background: var(--button-active);
+	color: var(--button-text-active);
+}
+
+div#edit_user div.func_container div#edit_user_list{
+	max-height: 400px;
+	overflow-y: scroll;
+}
+
+div#edit_user div.func_container div#edit_user_list div.edit_person{
+	padding: 1%;
+	border-top: 1px solid var(--light-gray);
+	border-bottom: 1px solid var(--light-gray);
+	border-radius: 15px;
+	margin: 1%;
+}
+
+div#edit_user div.func_container div#edit_user_list div.edit_person h2.name{
+	line-height: 50px;
+}
+
+div#edit_user div.func_container div#edit_user_list div.edit_person div.edit_user_button{
+	background: var(--button);
+	color: var(--button-text);
+	display: inline-block;
+	padding: 1%;
+	text-align: center;
+	border-radius: 10px;
+	transition: var(--transition);
+	cursor: pointer;
+	float: right;
+}
+
+div#edit_user div.func_container div#edit_user_list div.edit_person div.edit_user_button:hover{
+	background: var(--button-hover);
+	color: var(--button-text-hover);
+}
+
+div#edit_user div.func_container div#edit_user_list div.edit_person div.edit_user_button:active{
+	background: var(--button-active);
+	color: var(--button-text-active);
+}
+
+
+div#edit_user div.func_container div#edit_user_list div.edit_person div.edit_tools{
+	margin-top: 1%;
+}
+
+div#edit_user div.func_container div#edit_user_list div.edit_person div.edit_tools div.edit_info_block{
+	margin-bottom: 1%;
+}
+
+
+div#edit_user div.func_container div#edit_user_list div.edit_person div.edit_tools div.edit_info_block input{
+	float: left;
+	padding: 1%;
+	font-size: 1em;
+	border-radius: 10px;
+	border: 1px solid var(--accent);
+	width: 50%;
+}
+
+div#edit_user div.func_container div#edit_user_list div.edit_person div.edit_tools div.save_new_info{
+	background: var(--button);
+	color: var(--button-text);
+	padding: 1%;
+	border-radius: 10px;
+	margin-left: 10px;
+	text-align: center;
+	float: left;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+div#edit_user div.func_container div#edit_user_list div.edit_person div.edit_tools div.save_new_info:hover{
+	background: var(--button-hover);
+	color: var(--button-text-hover);
+}
+
+
+div#edit_user div.func_container div#edit_user_list div.edit_person div.edit_tools div.save_new_info:active{
+	background: var(--button-active);
+	color: var(--button-text-active);
+}
+

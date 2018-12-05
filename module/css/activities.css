@@ -1,0 +1,87 @@
+
+div#activity_search_bar_container{
+	margin: 1%;
+}
+
+div#activity_search_bar_container div#search_button{
+	background: var(--button);
+	color: var(--button-text);
+	width: 9%;
+	float: right;
+	height: 60px;
+	border-radius: 15px;
+	line-height: 60px;
+	text-align: center;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+div#activity_search_bar_container div#search_button:hover{
+	background: var(--button-hover);
+	color: var(--button-text-hover);
+}
+
+div#activity_search_bar_container div#search_button:active{
+	background: var(--button-active);
+	color: var(--button-text-active);
+}
+
+input#activity_search_bar{
+	padding: 1%;
+	height: 60px;
+	border-radius: 15px;
+	border: 1px solid var(--accent);
+	font-size: 1.5em;
+	width: 90%;
+}
+
+div.moduleWrapper div#activity_list{
+	max-height: 60%;
+	overflow-y: scroll;
+}
+
+div.moduleWrapper div#activity_list div.activity_item{
+	border-radius: 15px;
+	border-top: 1px solid var(--activity-item-border);
+	border-bottom: 1px solid var(--activity-item-border);
+	padding: 1%;
+	margin: 1%;
+	transition: var(--transition);
+	cursor: pointer;
+}
+
+div.moduleWrapper div#activity_list div.activity_item:hover{
+	background: var(--activity-item-hover);
+}
+
+div.moduleWrapper div#activity_list div.activity_item:active{
+	background: var(--activity-item-active);
+}
+
+div.moduleWrapper div#activity_list div.activity_item h2{
+	line-height: 50px;
+}
+
+
+div.moduleWrapper div#activity_list div.activity_item p.activity_id{
+	line-height: 50px;
+	float: right;
+	font-family: 'Consolas', monospace;
+}
+
+div.moduleWrapper div#activity_list div.activity_item div.activity_info{
+	display: none;
+}
+
+div.moduleWrapper div#activity_list div.activity_item div.activity_info p, ul{
+	margin-bottom: 1%;
+}
+
+div.moduleWrapper div#activity_list div.activity_item div.activity_info span.activity_info_label{
+	font-weight: bold;
+}
+
+div.moduleWrapper div#activity_list div.activity_item div.activity_info ul{
+	margin-left: 3%;
+	list-style: dash;
+}
