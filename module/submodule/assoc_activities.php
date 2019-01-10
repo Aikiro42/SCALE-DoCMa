@@ -35,6 +35,7 @@
 		
 		echo '<div class="aff">';
 		
+		//if the user is a supervisor or an administrator, show the progress checklist.
 		if($_SESSION['ual_id'] == 2 || $_SESSION['ual_id'] == 1){
 			echo '<div class="progress_checklist_button">Progress Checklist</div>';
 		}

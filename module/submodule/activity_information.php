@@ -14,6 +14,23 @@ $sample = false;
 	
 	<?php
 	
+	/*
+		<div id="activity_status">
+			<h2>Activity Status</h2>
+			<div id="activity_status_content">
+				<!--Simple list-->
+				<?php
+					$query = "SELECT activity_status FROM ActivityProgress WHERE activity_id = " . $activity_id;
+					$result = mysqli_query($dbc, $query);
+					$row = mysqli_fetch_array($result);
+					$activity_status = $row['activity_status'];
+					echo $activity_status;
+				?>
+			</div>
+		</div>
+	
+	*/
+	
 	if($sample){
 		echo '
 				
@@ -64,13 +81,11 @@ $sample = false;
 		';
 	}else{
 		
-		$query = 'SELECT * FROM Activities WHERE activity_id = ' . $_POST['activity_id'];
+		$activity_id = $_POST['activity_id'];
+		$query = 'SELECT * FROM Activities WHERE activity_id = ' . $activity_id;
 		$result = mysqli_query($dbc, $query);
 		$row = mysqli_fetch_array($result);
 		
-	
-		
-
 		$strand_list = '';
 		$outcome_list = '';
 		

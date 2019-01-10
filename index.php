@@ -4,7 +4,6 @@
    $error = "";
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form 
-      
       $myusername = mysqli_real_escape_string($dbc,$_POST['username']);
       $mypassword = mysqli_real_escape_string($dbc,$_POST['password']); 
       
@@ -40,24 +39,24 @@
 		</header>
 		
 		<div id="login">
-		<form action="" method="post">
-			<div class="fields">
-				<span class="fieldLabels">
-					Username
-				</span>
-				<input type="text" class="credentials" id="username" name="username" />
-			</div>
-			<div class="fields">
-				<span class="fieldLabels">
-					Password
-				</span>
-				<input type="password" class="credentials" id="password" name="password" />
-			</div>
-			<div id="buttons">
-				<input type="submit" class="buttons" id="submit" value="Login"/>
-			</div>
-			<?php echo '<br /><span id="errorMessage">'.$error.'</span>'; ?>
-		</form>
+			<form action="" method="post">
+				<div class="fields">
+					<span class="fieldLabels">
+						Username
+					</span>
+					<input type="text" class="credentials" id="username" name="username" />
+				</div>
+				<div class="fields">
+					<span class="fieldLabels">
+						Password
+					</span>
+					<input type="password" class="credentials" id="password" name="password" />
+				</div>
+				<div id="buttons">
+					<input type="submit" class="buttons" id="submit" value="Login"/>
+				</div>
+				<?php echo '<br /><span id="errorMessage">'.$error.'</span>'; ?>
+			</form>
 		</div>
 		
 		

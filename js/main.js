@@ -153,6 +153,11 @@ $(function(){
 		});
 	}
 	
+	/*
+	
+	Old code for loadModule()
+	Replaced with Ajax function
+	
 	function loadModule(URL){
 		activateWall(500);		
 		$("#moduleContainer").fadeOut(250, function(){
@@ -165,6 +170,24 @@ $(function(){
 					$("#navWrapper").slideToggle(250);
 				}
 			});
+		});
+	}
+	*/
+	
+	function loadModule(URL){
+		activateWall(500);
+		$.ajax({
+			url: URL,
+			method: 'post',
+			success: function(data){
+				$("#moduleContainer").html(data);
+				deactivateWall(500);
+				$("#moduleContainer").fadeIn(250);
+			},
+			error: function(xhr, st, er){
+				$("#headerNav").slideToggle(250);
+				$("#navWrapper").slideToggle(250);
+			}
 		});
 	}
 	

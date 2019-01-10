@@ -15,6 +15,9 @@
 		var achieve_activity_id = <?php echo $_POST['activity_id']; ?>;
 	</script>
 	
+	
+
+	
 		<?php
 		
 		$sub_query = 'SELECT * FROM ActivityProgress WHERE activity_id = ' . $_POST['activity_id'];

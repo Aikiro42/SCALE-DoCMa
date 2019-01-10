@@ -45,13 +45,7 @@
 		}
 	
 	?>
-	
-	<div id="activity_status">
-		<h2>Activity Status</h2>
-		<div id="activity_status_content">
-			<!--Simple list-->
-		</div>
-	</div>
+
 	
 	<div id="submit_buttons">
 		
