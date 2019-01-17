@@ -73,7 +73,11 @@ $(function(){
 	
 	//$("#headerNav").slideUp(0);
 	//$("#moduleContainer").slideUp(0);
-	initialize_page(true);
+	
+	//initialize_page(isAdmin);
+	//if isAdmin, then open the administrative page regardless of user type.
+	//if not, open to profile as normal
+	initialize_page(false);
 	
 	/*
 	function assignButton(selector, URL){
