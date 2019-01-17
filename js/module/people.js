@@ -16,8 +16,6 @@ $(function(){
 		});
 		
 		console.log('hi');
-		
-	
 	}
 	
 	$('input#person_search_bar').keypress(function(e){

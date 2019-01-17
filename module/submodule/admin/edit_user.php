@@ -44,7 +44,31 @@
 				<div class="save_new_info">Save</div>
 				<div class="clear"></div>
 			</div>
-					
+			
+			<!--mobile number-->
+			<div class="edit_info_block">
+				<h3>Mobile Number</h3>
+				<input type="text" name="new_mobile_number" value="09278545094"/>
+				<div class="save_new_info">Save</div>
+				<div class="clear"></div>
+			</div>
+			
+			<!--email-->
+			<div class="edit_info_block">
+				<h3>Email</h3>
+				<input type="text" name="new_email" value="hiroku042@gmail.com"/>
+				<div class="save_new_info">Save</div>
+				<div class="clear"></div>
+			</div>
+			
+			<!--residency_address-->
+			<div class="edit_info_block">
+				<h3>Residency Address</h3>	
+				<input type="text" name="new_residency_address" value="Blk 14 Lt 1 Rio Del Grande, Enrile, Cagayan"/>
+				<div class="save_new_info">Save</div>
+				<div class="clear"></div>
+			</div>
+			
 		</div>
 	</div>
 	<?php
@@ -77,4 +101,5 @@
 </div>
 
 <!--FIXME: Security in this part of the program is bad - users can access the hidden ui via the developmental console of the browser.-->
-
+<!--js file that does background processes link here-->
+<script type="text/javascript" src="js/module/submodule/admin/edit_user.js" />

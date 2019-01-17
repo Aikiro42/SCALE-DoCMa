@@ -3,6 +3,7 @@
 <?php
 
 	include('../../config.php');
+	include('../../ChromePhp.php');
 	session_start();
 	
 	$activity_id =  $_POST['activity_id'];
@@ -18,7 +19,9 @@
 	$row = mysqli_fetch_array($result);
 	$is_leader =  $row['aff_id'] == 5;
 	$is_soloist =  $row['aff_id'] == 7;
-	
+	ChromePhp::log('Reporting from module/submodule/activity_management.php');
+	ChromePhp::log('$is_soloist: ' . $is_soloist);
+	ChromePhp::log('1 || 1: ' . (1 || 1));
 	
 ?>
 	<!-- for toggling between "more info" and "manage" -->
@@ -31,7 +34,7 @@
 	
 	<?php
 	
-		if($is_leader || $is_soloist){
+		if($is_leader || !$is_soloist){
 			echo '
 						
 				
