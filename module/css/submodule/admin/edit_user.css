@@ -47,6 +47,10 @@ div#edit_user div.func_container div#edit_user_list div.edit_person{
 	margin: 1%;
 }
 
+div#edit_user div.func_container div#edit_user_list div.edit_person.sample{
+	display: none;
+}
+
 div#edit_user div.func_container div#edit_user_list div.edit_person h2.name{
 	line-height: 50px;
 }
@@ -75,6 +79,7 @@ div#edit_user div.func_container div#edit_user_list div.edit_person div.edit_use
 
 
 div#edit_user div.func_container div#edit_user_list div.edit_person div.edit_tools{
+	display: none;
 	margin-top: 1%;
 }
 

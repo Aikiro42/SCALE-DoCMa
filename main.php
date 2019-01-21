@@ -161,6 +161,11 @@
 			+'\n Profile Customization'
 			+'\n Night Mode'
 			+'\n Social Network Links'
+			
+			//20190121
+			+'\n admin are informed when activity is proposd'
+			+'\n PHYSICAL make flowchart'
+			+'\n deleting a form and all its versions deletes alll the forms and versions in the activity'
 		);
 	}
 	

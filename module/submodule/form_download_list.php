@@ -60,7 +60,7 @@
 		$sub_query = "SELECT * FROM Formtypes WHERE formtype_id = " . $row['formtype_id'];
 		$sub_result = mysqli_query($dbc, $sub_query);
 		$typeName = mysqli_fetch_array($sub_result)['typeName'];
-		
+		$form_id = $row['form_id'];
 		$sub_query = "SELECT * FROM Versions WHERE Versions.form_id = " . $row['form_id'] . " ORDER BY Versions.version_id DESC";
 		$sub_result = mysqli_query($dbc, $sub_query);
 		$sub_row =  mysqli_fetch_array($sub_result);
@@ -91,16 +91,16 @@
 				<br />
 				<p><em>'.$typeName.'</em></p>
 				<p>Latest Version: '.$version_id.'</p>
-				
+				<p>Form ID: '.$form_id.'</p>
 				<!--Delete button-->
-				<input type="hidden" id="del_form_id" value="form_id" />
+				<input type="hidden" id="del_form_id" value="'.$form_id.'" />
 				<p class="delete_button">Delete</p>
 				
 				<!--Download Button (soon to be obsolete)-->
 				<a class="download_button" href="'.$version_dir.'">Download Latest</a>
 				
 				<!--Submit version button-->
-				<input type="hidden" id="form_id" name="form_id" value="'.$row['form_id'].'" />
+				<input type="hidden" id="form_id" name="form_id" value="'.$form_id.'" />
 				<input type="hidden" id="activity_id" name="activity_id" value="'.$row['activity_id'].'" />
 				<form enctype="multipart/form-data" action="submit.php" method="post">
 					

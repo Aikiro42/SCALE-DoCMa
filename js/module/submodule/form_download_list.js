@@ -1,9 +1,5 @@
 $(function(){
 	
-	
-	
-	
-	
 	$('p.delete_button').click(function(){
 		var isDelete = confirm('Do you really want to delete the form and all its versions?');
 		if(isDelete){
