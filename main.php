@@ -36,6 +36,7 @@
 	<head>
 	
 		<title>SCALE Docma</title>
+		
 	
 		<link href="css/var.css" rel="stylesheet" type="text/css" />
 		
@@ -84,6 +85,8 @@
 		<script type="text/javascript" src="js/main.js"></script>
 	</head>
 	<body>
+	
+	<!--===[Miscellaneous Stuff]==========================-->
 	<div id="activity_wizard">
 		<div id="act_wiz_container">
 			<div id="close_popup">X</div>
@@ -95,31 +98,41 @@
 	<div id="anti_interaction_wall">
 		<h1>Loading...</h1>
 	</div>
-	<div id="wrapper">
+	<!--==================================================-->
 	
-		<header>
-			<img id="logo" />
-			<h1>SCALE DoCMa</h1>
-			<ul id="headerNav">
-				<li id="profile_administrator">My Profile</li>
-				<li id="download">Downloadable Forms</li>
-				<?php
-					if($ual_id == 1){
-						echo '
-						
-							<li id="administrative">Administrative</li>
-						
-						';
-					}
-				?>
-				<li id="people">People</li>
-				<li id="activities">Activities</li>
-				<li id="about">About</li>
-			</ul>
-		</header>
+	<div id="wrapper">
+	<div id="flex-wrapper">
+		<ul id="navpane">
+			<li id="profile_administrator">My Profile</li>
+			<li id="download">Downloadable Forms</li>
+			<?php
+				if($ual_id == 1){
+					echo '
+					
+						<li id="administrative">Administrative</li>
+					
+					';
+				}
+			?>
+			<li id="people">People</li>
+			<li id="activities">Activities</li>
+			<li id="about">About</li>
+		</ul>
 		
-		<div id="moduleContainer">
+		<div id="header-body-container">
+		
+			<header>
+				<img id="burger-button" src="img/burger-button-white.png"/>
+				<h1>SCALE DoCMa</h1>
+			</header>
+	
+			<div id="moduleContainer">
+				<!--contains the modules loaded by jquery-->
+			</div>
+		
 		</div>
+	</div>
+		
 	
 	</div>
 	<script>

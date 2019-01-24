@@ -1,34 +1,60 @@
 
+div#flex-wrapper{
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+}
+
+div#flex-wrapper div#header-body-container{
+	width: 100%;
+	height: 100%;
+}
+
 header{
 	text-align: center;
 }
 
-header ul#headerNav{
-	background: var(--accent);
-	text-align: center;
-	margin: auto;
+header img#burger-button{
+	float: left;
+	height: 45px;
+	width: 45px;
+	padding: 15px;
+	cursor: pointer;
+	transition: var(--transition);
 }
 
-header ul#headerNav li{
+header img#burger-button:hover{
+	background: var(--light-blue);
+}
+
+header img#burger-button:active{
+	background: var(--dark-blue);
+}
+
+
+
+ul#navpane{
+	background: var(--accent);
+	width: 30vw;
+}
+
+ul#navpane li{
 	background: var(--button);
 	color: var(--button-text);
-	display: inline;
-	line-height: 3%;
+	font-size: 1.5em;
 	list-style: none;
 	padding: 1% 3%;
-	text-align: center;
 	cursor: pointer;
-	border-radius: 15px;
 	transition: var(--transition);
 
 }
 
-header ul#headerNav li:hover{
+ul#navpane li:hover{
 	color: var(--button-text-hover);
 	background: var(--button-hover);
 }
 
-header ul#headerNav li:active{
+ul#navpane li:active{
 	color: var(--button-text-active);
 	background: var(--button-active);
 }
