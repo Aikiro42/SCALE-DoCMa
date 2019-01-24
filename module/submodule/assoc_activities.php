@@ -42,7 +42,7 @@
 
 		//echo '<div class="progress_checklist_button">Progress Checklist</div>';
 		echo '<div class="manage_button">Manage</div>';
-		echo '<div class="more_info_button"></div>';
+		echo '<div class="more_info_button">More Info</div>';
 		
 		echo '<h2>'.$activity.'</h2>';
 		echo '<p>'.$affiliation.'</p>';
