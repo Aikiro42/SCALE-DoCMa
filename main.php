@@ -98,15 +98,9 @@
 	<div id="wrapper">
 	
 		<header>
+			<img id="logo" />
 			<h1>SCALE DoCMa</h1>
 			<ul id="headerNav">
-				<!--<li id="home">Home</li>-->
-				<!--
-				<li id="profile_administrator">Profile (Administrator)</li>
-				<li id="profile_adviser">Profile (Adviser)</li>
-				<li id="profile_supervisor">Profile (Supervisor)</li>
-				<li id="profile_student">Profile (Student)</li>
-				-->
 				<li id="profile_administrator">My Profile</li>
 				<li id="download">Downloadable Forms</li>
 				<?php

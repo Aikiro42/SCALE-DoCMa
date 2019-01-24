@@ -42,6 +42,7 @@
 	--main: var(--blue);
 	--main-background: white;
 	--main-text: black;
+	--module-wrapper-background: white;
 	
 	--field-background: white;
 	--field-text: black;
