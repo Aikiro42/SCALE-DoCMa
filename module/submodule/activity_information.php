@@ -1,3 +1,5 @@
+<!--Called from assoc_activities.php-->
+
 <?php
 
 include('../../config.php');

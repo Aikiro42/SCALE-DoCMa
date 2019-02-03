@@ -42,6 +42,7 @@
 	</div>
 	
 	
+	<!--loads pending_actions.php-->
 	<?php
 	
 		if($_SESSION['ual_id'] < 2){
@@ -53,6 +54,7 @@
 	
 	?>
 	
+	<!--Load assoc_activities.php-->
 	<?php
 		if($_SESSION['ual_id'] < 5){
 			echo '

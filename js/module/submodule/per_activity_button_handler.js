@@ -1,3 +1,5 @@
+//Referenced by assoc_activities.php
+
 $(function(){
 	
 	//"Manage" Button for each activity
