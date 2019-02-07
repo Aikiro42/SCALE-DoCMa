@@ -33,6 +33,30 @@
 		$action_checked = '';
 		$leadership_checked = '';
 		
+		$activity_status = $sub_row['activity_status'];
+		$stat1_selected = '';
+		$stat2_selected = '';
+		$stat3_selected = '';
+		$stat4_selected = '';
+		$stat5_selected = '';
+		
+		if($activity_status == 'Preparation Stage'){
+			$stat1_selected = 'selected="true"';
+		}
+		if($activity_status == 'Approved for Implementation'){
+			$stat2_selected = 'selected="true"';
+		}
+		if($activity_status == 'Undergoing Validation'){
+			$stat3_selected = 'selected="true"';
+		}
+		if($activity_status == 'Completed'){
+			$stat4_selected = 'selected="true"';
+		}
+		if($activity_status == 'Aborted'){
+			$stat5_selected = 'selected="true"';
+		}
+		
+		
 		if($sub_row['service_achieved']){
 			$service_checked = 'checked';
 		}
@@ -46,9 +70,19 @@
 			$leadership_checked = 'checked';
 		}
 		
-		
-		
 		?>
+		
+	
+	<div id="activity_status">
+		<label for="activity_status"><h2>Activity Status</h2></label>
+		<select name="activity_status">
+			<option value="Preparation Stage" <?php echo $stat1_selected; ?>>Preparation Stage</option>
+			<option value="Approved for Implementation" <?php echo $stat2_selected; ?>>Approved for Implementation</option>
+			<option value="Undergoing Validation" <?php echo $stat3_selected; ?>>Undergoing Validation</option>
+			<option value="Completed" <?php echo $stat4_selected; ?>>Completed</option>
+			<option value="Aborted" <?php echo $stat5_selected; ?>>Aborted</option>
+		</select>
+	</div>
 		
 	<div id="strand_progress">
 		<h2>Achieved Strands:</h2>

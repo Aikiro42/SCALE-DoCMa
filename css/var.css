@@ -39,6 +39,10 @@
 	
 	/*General Variables*/
 	
+	--flex-wrapper-background: white;
+	
+	--dropdown-box-border-color: var(--blue);
+	
 	--main: var(--blue);
 	--main-background: white;
 	--main-text: black;

@@ -1,5 +1,7 @@
 <?php
 
+	//	activity_status ENUM('Preparation Stage','Approved for Implementation','Undergoing Validation','Completed','Aborted') DEFAULT 'Preparation Stage',
+
 	include('../config.php');
 	include('../ChromePhp.php');
 	

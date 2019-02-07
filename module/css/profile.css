@@ -44,6 +44,8 @@ div.moduleWrapper div#userInfo a#logout_button, div#more_button{
 	border-radius: 10px;
 	cursor: pointer;
 	transition: var(--transition);
+	width: 7.5%;
+	text-align: center;
 }
 
 div.moduleWrapper div#userInfo div#more_button{

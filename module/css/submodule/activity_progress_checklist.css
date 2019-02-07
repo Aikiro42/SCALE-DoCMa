@@ -6,3 +6,15 @@ div.subModuleWrapper div#strand_progress, div#outcome_progress{
 div.subModuleWrapper div#strand_progress label, div#outcome_progress label{
 	margin-bottom: 3%;
 }
+
+div.subModuleWrapper div#activity_status{
+	margin-bottom: 1%;
+}
+
+div.subModuleWrapper div#activity_status select{
+	border: 1px solid var(--dropdown-box-border-color);
+	padding: 1%;
+	border-radius: 12px;
+	cursor: pointer;
+	font-size: 1em;
+}

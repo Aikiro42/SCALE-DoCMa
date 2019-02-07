@@ -118,6 +118,8 @@ $sample = false;
 		$progress_result = mysqli_query($dbc, $progress_query);
 		$progress_row = mysqli_fetch_array($progress_result);
 		
+		$activity_status = $progress_row['activity_status'];
+		
 		$service_acheived = $creativity_achieved = $action_achieved = $leadership_achieved = '';
 		
 		//==============================
@@ -173,6 +175,9 @@ $sample = false;
 		}
 		
 		echo '
+				
+				<h3>Activity Status:</h3>
+				<p class="info_p" id="activity_status">'.$activity_status.'</p>
 				
 				<h3>Activity ID:</h3>
 				<p class="info_p">'.$row['activity_id'].'</p>

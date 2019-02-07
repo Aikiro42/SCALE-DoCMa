@@ -38,6 +38,8 @@ div.moduleWrapper div#pendingActions div.approve_button, div.deny_button, a.down
 	border-radius: 10px;
 	cursor: pointer;
 	transition: var(--transition);
+	width: 7.5%;
+	text-align: center;
 }
 
 div.moduleWrapper div#pendingActions div.approve_button{

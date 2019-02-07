@@ -1,4 +1,5 @@
 <h1>Affiliations</h1>
+<!--assoc_activities.php-->
 <div id="AssocActivities">
 <p id="refresh_assoc_activities">Refresh</p>
 <script src="js/module/submodule/refresh_assoc_activities_handler.js"></script>
@@ -37,12 +38,12 @@
 		
 		//if the user is a supervisor or an administrator, show the progress checklist.
 		if($_SESSION['ual_id'] == 2 || $_SESSION['ual_id'] == 1){
-			echo '<div class="progress_checklist_button">Progress Checklist</div>';
+			echo '<div class="standard_button progress_checklist_button">Progress Checklist</div>';
 		}
 
 		//echo '<div class="progress_checklist_button">Progress Checklist</div>';
-		echo '<div class="manage_button">Manage</div>';
-		echo '<div class="more_info_button">More Info</div>';
+		echo '<div class="standard_button manage_button">Manage</div>';
+		echo '<div class="standard_button more_info_button">More Info</div>';
 		
 		echo '<h2>'.$activity.'</h2>';
 		echo '<p>'.$affiliation.'</p>';
