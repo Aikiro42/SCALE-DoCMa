@@ -5,7 +5,7 @@ include('../../config.php');
 include('../../ChromePhp.php');
 session_start();
 
-ChromePhp::log('Broadcasting from activity_list.php');
+ChromePhp::log('Broadcasting from delete_activitty.php');
 
 $search = '';
 
@@ -19,7 +19,6 @@ $query = "SELECT * FROM Activities ORDER BY activity_name";
 $result = mysqli_query($dbc, $query);
 
 while($row = mysqli_fetch_array($result)){
-	
 	
 	$activity_name = $row['activity_name'];
 	$activity_id = $row['activity_id'];
@@ -67,9 +66,11 @@ while($row = mysqli_fetch_array($result)){
 	
 	
 	$echo_item = '
-				<div class="activity_item">
-					<p class="activity_id">'.$activity_id.'</p>
-					<h2 class="activity_name">'.$activity_name.'</h2>
+				<div class="admin_activity_item">
+					<div class="activity_info_dropper_button">
+						<p class="activity_id">'.$activity_id.'</p>
+						<h2 class="activity_name">'.$activity_name.'</h2>
+					</div>
 					<div class="activity_info">
 						<hr />
 						<p>
@@ -100,6 +101,7 @@ while($row = mysqli_fetch_array($result)){
 								'.$outcome_list.'
 							</ul>
 						</div>
+						<div class="delete_button">Delete</div>
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -121,4 +123,4 @@ while($row = mysqli_fetch_array($result)){
 
 ?>
 
-<script src="js/module/submodule/per_activity_item_handler.js"></script>
+<script src="js/module/submodule/admin/per_delete_activity_item_handler.js"></script>

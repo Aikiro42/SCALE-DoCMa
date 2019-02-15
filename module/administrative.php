@@ -24,6 +24,11 @@
 		<div class="func_container"></div>
 	</div>
 	
+	<div class="admin_function" id="delete_activity">
+		<h2 class="admin_button">Delete Activity</h2>
+		<div class="func_container"></div>
+	</div>
+	
 	
 	
 </div>

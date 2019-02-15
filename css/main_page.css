@@ -37,6 +37,7 @@ header img#burger-button:active{
 ul#navpane{
 	background: var(--accent);
 	width: 30vw;
+	margin: 0;
 }
 
 ul#navpane li{

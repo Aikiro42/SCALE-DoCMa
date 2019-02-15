@@ -108,6 +108,41 @@ CREATE TABLE ActivityProgress(
 	results_achieved BOOLEAN DEFAULT false
 );
 
+/*
+
+I don't think this is necessary.
+
+If you want to track a person's activity progress,
+track it using:
+- ActivityProgress and ActivityUserAssoc
+	- if any strand of an associated activity is achieved, indicate that strand is achieved.
+	- if leadership strand of associated activity is achieved, and person is leader of associated activity, indicate that strand is achieved.
+
+|
+v
+
+*/
+CREATE TABLE PersonProgress(
+
+	user_id INT NOT NULL,
+	
+	service_achieved BOOLEAN DEFAULT false,
+	creativity_achieved BOOLEAN DEFAULT false,
+	action_achieved BOOLEAN DEFAULT false,
+	leadership_achieved BOOLEAN DEFAULT false,
+
+	o1_achieved BOOLEAN DEFAULT false,
+	o2_achieved BOOLEAN DEFAULT false,
+	o3_achieved BOOLEAN DEFAULT false,
+	o4_achieved BOOLEAN DEFAULT false,
+	o5_achieved BOOLEAN DEFAULT false,
+	o6_achieved BOOLEAN DEFAULT false,
+	o7_achieved BOOLEAN DEFAULT false,
+	o8_achieved BOOLEAN DEFAULT false,
+
+	FOREIGN KEY (user_id) REFERENCES Users(user_id)
+);
+
 CREATE TABLE AuditTrailLog(
 	entry_id INT UNSIGNED NOT NULL PRIMARY KEY,
 	entry_info VARCHAR(512) NOT NULL
@@ -153,16 +188,9 @@ VALUES
 
 INSERT INTO Users
 VALUES
-(0000001, 'root', '13-01104', 'img/mario.jpg', 1),
-(0000002, 'adviser', 'adviser', 'img/default.jpg', 2),
-(0000003, 'supervisor', 'supervisor', 'img/default.jpg', 3),
-(0000004, 'student', 'student', 'img/default.jpg', 4),
-(0000005, 'guest', 'guest', 'img/default.jpg', 5);
+(1234567, 'root', '13-01104', 'img/mario.jpg', 1);
+
 
 INSERT INTO Persons
 VALUES
-(0000001, 'PhpMySQL Administrator', 'Alvarado', 'hiroku042@gmail.com', 9278545094, 'Blk14 Lt1 Rio Del Grande, Enrile, Cagayan'),
-(0000002, 'Adviser', 'Test', 'test_email@gmail.com', 1234567890, 'This is the test residency address.'),
-(0000003, 'Supervisor', 'Test', 'test_email@gmail.com', 1234567890, 'This is the test residency address.'),
-(0000004, 'Student', 'Test', 'test_email@gmail.com', 1234567890, 'This is the test residency address.'),
-(0000005, 'Guest', 'Test', 'test_email@gmail.com', 1234567890, 'This is the test residency address.');
+(1234567, 'PhpMySQL Administrator', 'Alvarado', 'hiroku042@gmail.com', 9278545094, 'Blk14 Lt1 Rio Del Grande, Enrile, Cagayan');

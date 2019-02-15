@@ -1,6 +1,6 @@
 $(function(){
 	
-	console.log(achieve_activity_id);
+	console.log(user_id);
 	
 	$('select[name=activity_status]').off().change(function(){
 		activateWall(500);

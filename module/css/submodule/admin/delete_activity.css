@@ -1,0 +1,123 @@
+
+div.admin_function#delete_activity div#activity_search_bar_container{
+	margin: 1%;
+}
+
+div.admin_function#delete_activity div#activity_search_bar_container div#search_button{
+	background: var(--button);
+	color: var(--button-text);
+	width: 9%;
+	float: right;
+	height: 60px;
+	border-radius: 15px;
+	line-height: 60px;
+	text-align: center;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+div.admin_function#delete_activity div#activity_search_bar_container div#search_button:hover{
+	background: var(--button-hover);
+	color: var(--button-text-hover);
+}
+
+div.admin_function#delete_activity div#activity_search_bar_container div#search_button:active{
+	background: var(--button-active);
+	color: var(--button-text-active);
+}
+
+div.admin_function#delete_activity input#activity_search_bar{
+	padding: 1%;
+	height: 60px;
+	border-radius: 15px;
+	border: 1px solid var(--accent);
+	font-size: 1.5em;
+	width: 90%;
+}
+
+div.admin_function#delete_activity div.func_container div#activity_list{
+	max-height: 60%;
+	overflow-y: scroll;
+}
+
+div.admin_function#delete_activity div.func_container div#activity_list div.admin_activity_item{
+	border-radius: 15px;
+	border-top: 1px solid var(--activity-item-border);
+	border-bottom: 1px solid var(--activity-item-border);
+	padding: 0;
+	margin: 1%;
+	cursor: pointer;
+}
+
+div.admin_function#delete_activity div.func_container div#activity_list div.admin_activity_item:hover{
+	!background: default;
+	!color: default;
+}
+
+div.admin_function#delete_activity div.func_container div#activity_list div.admin_activity_item:active{
+	!background: default;
+	!color: default;
+}
+
+div.admin_function#delete_activity div.func_container div#activity_list div.admin_activity_item div.activity_info_dropper_button{
+	border-radius: 15px;
+	padding: 1%;
+}
+
+div.admin_function#delete_activity div.func_container div#activity_list div.admin_activity_item div.activity_info_dropper_button:hover{
+	background: var(--activity-item-hover);
+}
+
+div.admin_function#delete_activity div.func_container div#activity_list div.admin_activity_item div.activity_info_dropper_button:active{
+	background: var(--activity-item-active);
+}
+
+div.admin_function#delete_activity div.func_container div#activity_list div.admin_activity_item h2{
+	line-height: 50px;
+}
+
+
+div.admin_function#delete_activity div.func_container div#activity_list div.admin_activity_item p.activity_id{
+	line-height: 50px;
+	float: right;
+	font-family: 'Consolas', monospace;
+}
+
+div.admin_function#delete_activity div.func_container div#activity_list div.admin_activity_item div.activity_info{
+	display: none;
+	padding: 1%;
+}
+
+div.admin_function#delete_activity div.func_container div#activity_list div.admin_activity_item div.activity_info p, ul{
+	margin-bottom: 1%;
+}
+
+div.admin_function#delete_activity div.func_container div#activity_list div.admin_activity_item div.activity_info span.activity_info_label{
+	font-weight: bold;
+}
+
+div.admin_function#delete_activity div.func_container div#activity_list div.admin_activity_item div.activity_info ul{
+	margin-left: 3%;
+	list-style: dash;
+}
+
+div.admin_function#delete_activity div.func_container div#activity_list div.admin_activity_item div.activity_info div.delete_button{
+	background: var(--warning);
+	color: var(--warning-text);
+	
+	padding: 1%;
+	border-radius: 15px;
+	
+	transition: var(--transition);
+	cursor: pointer;
+}
+
+div.admin_function#delete_activity div.func_container div#activity_list div.admin_activity_item div.activity_info div.delete_button:hover{
+	background: var(--warning-hover);
+	color: var(--warning-text-hover);
+}
+
+div.admin_function#delete_activity div.func_container div#activity_list div.admin_activity_item div.activity_info div.delete_button:active{
+	background: var(--warning-active);
+	color: var(--warning-text-active);
+}

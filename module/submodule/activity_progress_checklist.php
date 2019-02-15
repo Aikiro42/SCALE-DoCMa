@@ -1,6 +1,6 @@
 <?php
 
-	include('../../config.php');
+	include('../../session.php');
 	include('../../ChromePhp.php');
 	
 ?>
@@ -13,6 +13,7 @@
 	<!--set js variables for auto updating upon clicking on checkboxes-->
 	<script>
 		var achieve_activity_id = <?php echo $_POST['activity_id']; ?>;
+		var this_user_id = <?php echo $_SESSION['user_id']; ?>;
 	</script>
 	
 	
