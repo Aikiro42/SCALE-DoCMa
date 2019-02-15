@@ -1,7 +1,7 @@
 <?php
 	include('../../config.php');
 	include('../../ChromePhp.php');
-	
+
 	ChromePhp::log('Broadcasting from scale/applications/admin/add_user_app.php');
 
 	ChromePhp::log('Starting session...');
