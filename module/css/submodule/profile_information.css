@@ -1,0 +1,36 @@
+div.moduleWrapper#profile_module div#profile_info_cont{
+	background: var(--profile-info-background);
+	margin: 1.5%;
+	padding: 1%;
+	border-radius: 15px;
+}
+
+div.moduleWrapper#profile_module div#profile_info_cont *{
+	color: white;
+}
+
+div.moduleWrapper#profile_module div#profile_info_cont div.achieved_box_container h3.achieved_box{
+	float: left;
+	display: block;
+	margin-right: .25%;
+	padding: 1%;
+	color: var(--profile-info-box-color);
+	background: var(--profile-info-box-background);
+	font-family: var(--profile-info-box-font-family);
+	border-radius: 5px;
+}
+
+div.moduleWrapper#profile_module div#profile_info_cont div.achieved_box_container h3.achieved_box.achieved{
+	
+	color: var(--profile-info-achieved-box-color);
+	background: var(--profile-info-achieved-box-background);
+}
+
+div.moduleWrapper#profile_module div#profile_info_cont div.achieved_box_container span.achieved_box_label{
+	float: left;
+}
+
+div.moduleWrapper#profile_module div#profile_info_cont div#achieved_outcomes{
+	clear: left;
+	margin-top: .5%;
+}

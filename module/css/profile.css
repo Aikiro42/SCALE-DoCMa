@@ -34,7 +34,7 @@ div.moduleWrapper div#userInfo span.user_cred_label{
 	text-align: right;
 }
 
-div.moduleWrapper div#userInfo a#logout_button, div#more_button{
+div.moduleWrapper div#userInfo a#logout_button, div#profile_info_button{
 	background: var(--button);
 	color: var(--button-text);
 	display: block;
@@ -48,36 +48,19 @@ div.moduleWrapper div#userInfo a#logout_button, div#more_button{
 	text-align: center;
 }
 
-div.moduleWrapper div#userInfo div#more_button{
+div.moduleWrapper div#userInfo div#profile_info_button{
 	margin-right: 1%;
+	width: 9%;
 }
 
-div.moduleWrapper div#userInfo a#logout_button:hover, div#more_button:hover{
+div.moduleWrapper div#userInfo a#logout_button:hover, div#profile_info_button:hover{
 	color: var(--button-text-hover);
 	background: var(--button-hover);
 }
 
-div.moduleWrapper div#userInfo a#logout_button:active, div#more_button:active{
+div.moduleWrapper div#userInfo a#logout_button:active, div#profile_info_button:active{
 	color: var(--button-text-active);
 	background: var(--button-active);
-}
-
-/*====================[More Information]===================*/
-
-div#more_information h2{
-	margin-top: 2%;
-	border-bottom: 1px solid black;
-	display: none;
-}
-
-/*=========================================================*/
-
-/*============[Details table]============*/
-
-table#clubs_int th, table#clubs_ext th{
-	width: 1%;
-	background: var(--main);
-	color: white;
 }
 
 /*submodule container CSS*/

@@ -75,6 +75,7 @@
 		<link href="module/css/submodule/activity_people.css" rel="stylesheet" type="text/css" />
 		<link href="module/css/submodule/activity_people_list.css" rel="stylesheet" type="text/css" />
 		<link href="module/css/submodule/assigned_people_list.css" rel="stylesheet" type="text/css" />
+		<link href="module/css/submodule/profile_information.css" rel="stylesheet" type="text/css" />
 
 		<!--Javascript Variables-->
 		<script>
@@ -159,7 +160,6 @@
 			+'\n About tab'
 			+'\n Privacy Policy'
 			+'\n Audit Trail Log'
-			+'\n Add user validation bug'
 			+'\n Remove custom user id, default autogen id'
 
 			+'\n "FPDF" autofill api'
@@ -177,7 +177,6 @@
 	}
 
 	/*
-
 	Give adviser permission to access progress checklist
 	
 	lagay sa scope and limitations na may seckyu issues sa site

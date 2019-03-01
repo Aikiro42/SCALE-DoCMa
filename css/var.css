@@ -115,6 +115,12 @@
 	--person-item-hover: var(--light-gray);
 	--person-item-active: var(--gray);
 	
+	--profile-info-background: var(--blue);
+	--profile-info-box-color: black;
+	--profile-info-box-background: white;
+	--profile-info-box-font-family: "Consolas", monospace;
+	--profile-info-achieved-box-color: white;
+	--profile-info-achieved-box-background: var(--green);
 	
 	--activity-item-border: var(--light-gray);
 	--activity-item: white;

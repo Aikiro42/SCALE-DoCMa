@@ -11,19 +11,20 @@ $(function(){
 	}
 	
 	//user information button
-	$("#more_button").click(function(){
+	$("#profile_information").slideUp(0);
+	$("#profile_info_button").click(function(){
 		//activateWall(500);
 		$.ajax({
-			url: 'module/submodule/more_information.php',
+			url: 'module/submodule/profile_information.php',
 			success: function(data){
-				var info_cont = $("#more_information");
-				var toggle_button = $("#more_button");
+				var info_cont = $("#profile_information");
+				var toggle_button = $("#profile_info_button");
 				info_cont.html(data);
 				if(info_cont.css("display") == "none"){
-					toggle_button.html("Less");
+					toggle_button.html("Hide Profile Info");
 					info_cont.slideDown();
 				}else{
-					toggle_button.html("More");
+					toggle_button.html("Show Profile Info");
 					info_cont.slideUp();
 				}
 				

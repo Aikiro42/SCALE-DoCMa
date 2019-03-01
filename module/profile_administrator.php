@@ -1,8 +1,8 @@
-<div class="moduleWrapper">
+<div class="moduleWrapper" id="profile_module">
 	<h1>My Profile</h1>
 	<div id="userInfo">
 		<a id="logout_button" href="logout.php">Log out</a>
-		<!--<div id="more_button">More</div>-->
+		<div id="profile_info_button">Show Profile Info</div>
 		<?php
 		include('../config.php');
 		session_start();
@@ -32,7 +32,7 @@
 		<p id="user_id"><span class="user_cred_label">User ID: </span> <?php echo $user_id;?></p>
 		<p id="ual_name"><span class="user_cred_label">Access Level: </span> <?php echo $ual_name;?></p>
 		<div class="clear"></div>
-		<div id="more_information">
+		<div id="profile_information">
 		</div>
 	</div>
 	
