@@ -6,9 +6,12 @@
 <!--<p style="color: red;">This admin function will be coming soon...	</p>-->
 
 <div id="edit_user_list">
-	<!--ajax: -->
+	<!--ajax: edit_user_list.php-->
 </div>
 
 <!--FIXME: Security in this part of the program is bad - users can access the hidden ui via the developmental console of the browser.-->
 <!--js file that does background processes link here-->
 <script type="text/javascript" src="js/module/submodule/admin/edit_user.js" />
+<script>
+	update_people_list(',');
+</script>

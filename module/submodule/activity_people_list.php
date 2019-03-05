@@ -5,7 +5,7 @@
 	session_start();
 	
 	ChromePhp::log('Broadcasting from scale/module/submodule/activity_people_list.php');
-	
+	$is_admin = $_SESSION['ual_id'] == 1;
 	//get activity type - indiv or group?
 	$activity_type = $_POST['activity_type'];
 	$search = $_POST['search'];
@@ -14,6 +14,11 @@
 	$is_group_activity = ($activity_type == 'Group');
 	
 	$query = 'SELECT * FROM Persons WHERE user_id != '.$_SESSION['user_id'].' ORDER BY lastName';
+	
+	if($is_admin){
+		$query = 'SELECT * FROM Persons ORDER BY lastName';
+	}
+	
 	$result = mysqli_query($dbc, $query);
 	
 	while($row = mysqli_fetch_array($result)){

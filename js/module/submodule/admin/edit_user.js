@@ -37,6 +37,4 @@ $(function(){
 		update_people_list(search_val);
 	});
 	
-	//update_people_list(',');
-	
 });

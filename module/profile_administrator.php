@@ -56,9 +56,19 @@
 	
 	<!--Load assoc_activities.php-->
 	<?php
-		if($_SESSION['ual_id'] < 5){
+		if($_SESSION['ual_id'] < 5 && $_SESSION['ual_id'] != 1){
 			echo '
 				<div id="AssocActivitiesContainer">
+				</div>
+			';
+		}
+	?>
+	
+	<!--Load admin_assoc_activities.php-->
+	<?php
+		if($_SESSION['ual_id'] == 1){
+			echo '
+				<div id="AdminAssocActivitiesContainer">
 				</div>
 			';
 		}
@@ -70,5 +80,12 @@
 	<script src="js/module/profile.js"></script>
 	<script src="js/module/submodule/pending_actions.js"></script>
 	<script src="js/module/submodule/assoc_activities.js"></script>
+	<?php
+		if($_SESSION['ual_id'] < 5){
+			echo '
+				<script src="js/module/submodule/admin_assoc_activities.js"></script>
+			';
+		}
+	?>
 
 </div>

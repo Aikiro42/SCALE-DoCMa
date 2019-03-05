@@ -24,6 +24,7 @@
 		<div class="edit_person">
 			<img class="profile_pic"></img>
 			<div class="edit_user_button">Edit User</div>
+			<!--<div class="delete_user_button">Delete User</div>-->
 			<h2 class="name">'.$name.'</h2>
 			<div class="clear"></div>
 			<div class="edit_tools">
@@ -49,15 +50,22 @@
 	
 ?>
 
+<!--
 	<div class="edit_person sample">
 		<img class="profile_pic"></img>
 		<div class="edit_user_button">Edit User</div>
 		<h2 class="name">Alvarado, Luis</h2>
 		<div class="clear"></div>
 		<div class="edit_tools">
+		
+		-->
+		
 			<!--ajax: edit_user_tools.php-->
+			
+		<!--
 		</div>
 	</div>
+-->
 
 	
 	

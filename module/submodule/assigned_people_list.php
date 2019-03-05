@@ -4,10 +4,15 @@
 	include('../../config.php');
 	session_start();
 	
+	$is_admin = $_SESSION['ual_id'] == 1;
+	
 	$activity_id = $_POST['activity_id'];
 	$curr_user_id = $_SESSION['user_id'];
 	
 	$query = 'SELECT * FROM ActivityUserAssoc WHERE activity_id = ' . $activity_id . ' AND user_id != ' . $curr_user_id;
+	if($is_admin){
+		$query = 'SELECT * FROM ActivityUserAssoc WHERE activity_id = ' . $activity_id;
+	}
 	$result = mysqli_query($dbc, $query);
 	
 	$are_people_associated = false;
