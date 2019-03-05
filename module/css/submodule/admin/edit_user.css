@@ -55,11 +55,12 @@ div#edit_user div.func_container div#edit_user_list div.edit_person h2.name{
 	line-height: 50px;
 }
 
-div#edit_user div.func_container div#edit_user_list div.edit_person div.edit_user_button{
+div#edit_user div.func_container div#edit_user_list div.edit_person div.admin_button{
 	background: var(--button);
 	color: var(--button-text);
 	display: inline-block;
 	padding: 1%;
+	margin-right: 1%;
 	text-align: center;
 	border-radius: 10px;
 	transition: var(--transition);
@@ -67,12 +68,12 @@ div#edit_user div.func_container div#edit_user_list div.edit_person div.edit_use
 	float: right;
 }
 
-div#edit_user div.func_container div#edit_user_list div.edit_person div.edit_user_button:hover{
+div#edit_user div.func_container div#edit_user_list div.edit_person div.admin_button:hover{
 	background: var(--button-hover);
 	color: var(--button-text-hover);
 }
 
-div#edit_user div.func_container div#edit_user_list div.edit_person div.edit_user_button:active{
+div#edit_user div.func_container div#edit_user_list div.edit_person div.admin_button:active{
 	background: var(--button-active);
 	color: var(--button-text-active);
 }

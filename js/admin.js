@@ -11,6 +11,10 @@ $(function(){
 				url: 'module/submodule/admin/'+func_name+'.php',
 				success: function(data){
 					func_container.html(data);
+					//special cases:
+					if(func_name == 'edit_user'){
+						jQuery.getScript('js/module/submodule/admin/edit_user_init.js');
+					}
 					func_container.finish();
 					func_container.slideDown();
 				},
