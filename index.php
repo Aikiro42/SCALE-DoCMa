@@ -6,6 +6,7 @@
    $error = "";
    if($_SERVER["REQUEST_METHOD"] == "POST") {
 	  ChromePhp::log('[index.php] : Request method is "post".');
+	  echo '<h1>HELLOOO????</h1>';
       // username and password sent from form 
       $myusername = mysqli_real_escape_string($dbc,$_POST['username']);
       $mypassword = mysqli_real_escape_string($dbc,$_POST['password']); 
