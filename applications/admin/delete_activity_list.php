@@ -73,6 +73,7 @@ while($row = mysqli_fetch_array($result)){
 					</div>
 					<div class="activity_info">
 						<hr />
+						<span class="warning"></span>
 						<p>
 							<span class="activity_info_label">Activity Status: </span>
 							'.$activity_status.'
@@ -101,6 +102,7 @@ while($row = mysqli_fetch_array($result)){
 								'.$outcome_list.'
 							</ul>
 						</div>
+						<span class="warning"></span>
 						<div class="delete_button">Delete</div>
 					</div>
 					<div class="clear"></div>

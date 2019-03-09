@@ -54,7 +54,7 @@ div.moduleWrapper div#AssocActivities div.aff div.sub_module_container{
 	width: 97.5%;
 	border: 1px solid var(--border);
 	border-radius: 10px;
-	margin-top: 1%;
+	margin-top: 3%;
 	padding: 1%;
 	/*problem*/
 	/*display: none;*/
@@ -63,7 +63,7 @@ div.moduleWrapper div#AssocActivities div.aff div.sub_module_container{
 
 div.moduleWrapper .warning_unapproved{
 	background: var(--warning-unapproved);
-	color: white;
+	color: var(--warning-unapproved-text);
 	padding: 1%;
 	border-radius: 10px;
 	display: inline-block;

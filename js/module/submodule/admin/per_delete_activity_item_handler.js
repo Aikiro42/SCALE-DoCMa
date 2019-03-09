@@ -1,6 +1,11 @@
 $(function(){
 
 	$('div.admin_activity_item div.activity_info_dropper_button').off().click(function(){
+		
+		//check if activity is associated with any person
+		var validate_ActivityUserAssoc_activity_id = $(this).parent().find('p.activity_id').html();
+		//alert('validate_ActivityUserAssoc_activity_id = ' + validate_ActivityUserAssoc_activity_id);
+		
 		var activity_info = $(this).parent().find('div.activity_info');
 		activity_info.finish();
 		if(activity_info.css('display') == 'none'){
@@ -8,6 +13,16 @@ $(function(){
 		}else{
 			activity_info.slideUp();
 		}
+		
+		$.ajax({
+			method: 'post',
+			data: {activity_id: validate_ActivityUserAssoc_activity_id},
+			url: 'applications/test_activity_user_assoc_for_activity.php',
+			success: function(data){
+				activity_info.find('span.warning').html(data);
+			}
+		});
+		
 	});
 	
 	$('div.admin_activity_item div.activity_info div.delete_button').off().click(function(){

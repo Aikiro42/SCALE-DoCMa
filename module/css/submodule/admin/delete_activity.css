@@ -88,6 +88,18 @@ div.admin_function#delete_activity div.func_container div#activity_list div.admi
 	padding: 1%;
 }
 
+div.admin_function#delete_activity div.func_container div#activity_list div.admin_activity_item div.activity_info span.warning{
+	display: block;
+	background: var(--warning);
+	color: var(--warning-text);
+	font-weight: bold;
+	margin: 1% 0;
+	padding: 1%;
+	border-radius: 5px;
+	border: var(--warning-border);
+}
+
+
 div.admin_function#delete_activity div.func_container div#activity_list div.admin_activity_item div.activity_info p, ul{
 	margin-bottom: 1%;
 }

@@ -92,6 +92,7 @@
 	
 	--warning: var(--red);
 	--warning-text: white;
+	--warning-border: 3px double white;
 	
 	--warning-hover: var(--button-hover);
 	--warning-text-hover: var(--button-text-hover);
@@ -128,6 +129,7 @@
 	--activity-item-active: var(--gray);
 	
 	--warning-unapproved: var(--red);
+	--warning-unapproved-text: white;
 	
 	--version-list-item-background: var(--light-blue);
 	--version-list-item-text: var(--white);

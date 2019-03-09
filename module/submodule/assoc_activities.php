@@ -50,6 +50,7 @@
 				<p>'.$affiliation.'</p>
 				<div id="activity'.$activity_id.'" class="sub_module_container"></div>
 				<input class="activity_id" type="hidden" value="'.$activity_id.'" />
+				<div class="clear"></div>
 			</div>
 		
 		';

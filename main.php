@@ -194,6 +194,11 @@
 
 	Disclaimer: The Docma is for the collection of forms and for visual interface that will help people involved in the SCALE
 	program manage their activities and achievements.
+	
+	
+	
+	
+	MySQL: Encrypt passwords
 
 	*/
 
