@@ -46,13 +46,13 @@
 					<span class="fieldLabels">
 						Username
 					</span>
-					<input type="text" class="credentials" id="username" name="username" />
+					<input type="text" class="credentials" id="username" name="username" autocomplete="true" />
 				</div>
 				<div class="fields">
 					<span class="fieldLabels">
 						Password
 					</span>
-					<input type="password" class="credentials" id="password" name="password" />
+					<input type="password" class="credentials" id="password" name="password" autocomplete="true" />
 				</div>
 				<div id="buttons">
 					<input type="submit" class="buttons" id="submit" value="Login"/>
