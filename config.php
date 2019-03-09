@@ -2,7 +2,7 @@
 
 //initialize MySQL Connection Variables
 
-$deploy_test = False;
+$deploy_test = True;
 
 if($deploy_test){
 	include('cleardb-config.php');
