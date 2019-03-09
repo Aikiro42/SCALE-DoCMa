@@ -4,14 +4,24 @@ CREATE DATABASE IF NOT EXISTS scale;
 
 USE scale;
 
-CREATE TABLE Persons(
-	user_id INT NOT NULL,
-	firstName VARCHAR(255) NOT NULL,
-	lastName VARCHAR(255) NOT NULL,
-	email VARCHAR(255) NULL,
-	mobile_number LONG NULL,
-	residency_address VARCHAR(512) NULL,
-	FOREIGN KEY (user_id) REFERENCES Users(user_id)
+DROP TABLE IF EXISTS UserAccessLevels;
+DROP TABLE IF EXISTS Users;
+DROP TABLE IF EXISTS Persons;
+DROP TABLE IF EXISTS Activities;
+DROP TABLE IF EXISTS Formtypes;
+DROP TABLE IF EXISTS Outcomes;
+DROP TABLE IF EXISTS Forms;
+DROP TABLE IF EXISTS Versions;
+DROP TABLE IF EXISTS Affiliations;
+DROP TABLE IF EXISTS ActivityUserAssoc;
+DROP TABLE IF EXISTS ActivityProgress;
+DROP TABLE IF EXISTS AuditTrailLog;
+
+
+CREATE TABLE UserAccessLevels(
+	ual_id INT UNSIGNED NOT NULL PRIMARY KEY,
+	name VARCHAR(255) NOT NULL,
+	permission BOOLEAN NOT NULL
 );
 
 CREATE TABLE Users(
@@ -23,10 +33,14 @@ CREATE TABLE Users(
 	FOREIGN KEY (ual_id) REFERENCES UserAccessLevels(ual_id)
 );
 
-CREATE TABLE UserAccessLevels(
-	ual_id INT UNSIGNED NOT NULL PRIMARY KEY,
-	name VARCHAR(255) NOT NULL,
-	permission BOOLEAN NOT NULL
+CREATE TABLE Persons(
+	user_id INT NOT NULL,
+	firstName VARCHAR(255) NOT NULL,
+	lastName VARCHAR(255) NOT NULL,
+	email VARCHAR(255) NULL,
+	mobile_number LONG NULL,
+	residency_address VARCHAR(512) NULL,
+	FOREIGN KEY (user_id) REFERENCES Users(user_id)
 );
 
 CREATE TABLE Activities(
