@@ -2,7 +2,7 @@
 
 //initialize MySQL Connection Variables
 
-$deploy_test = False;
+$deploy_test = True;
 
 if($deploy_test){
 	include('cleardb-config.php');
@@ -11,8 +11,6 @@ if($deploy_test){
 	DEFINE('DB_PASSWORD','13-01104');
 	DEFINE('DB_HOST', 'localhost');
 	DEFINE('DB_NAME', 'scale');
-		
-	//DEFINE('DB_HOST', '192.168.56.103');
 
 	$host="localhost";
 	$username="root";

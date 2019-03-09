@@ -27,7 +27,7 @@
 ?>
 <html>
 	<head>
-		<title>Scale DocMa</title>
+		<title>Scale DocMa - Login</title>
 		<link href="css/var.css" rel="stylesheet" type="text/css" />
 		<link href="css/main.css" rel="stylesheet" type="text/css" />
 		<link href="css/login.css" rel="stylesheet" type="text/css" />
