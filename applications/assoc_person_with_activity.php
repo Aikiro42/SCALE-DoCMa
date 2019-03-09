@@ -1,6 +1,7 @@
 <?php
 
 	include('../config.php');
+	session_save_path('../tmp');
 	session_start();
 	
 	$activity_id = $_POST['activity_id'];

@@ -1,6 +1,7 @@
 <?php
    include("config.php");
    include("ChromePhp.php");
+   session_save_path('\tmp');
    session_start();
    $error = "";
    if($_SERVER["REQUEST_METHOD"] == "POST") {

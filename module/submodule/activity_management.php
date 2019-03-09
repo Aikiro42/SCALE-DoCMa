@@ -4,6 +4,7 @@
 
 	include('../../config.php');
 	include('../../ChromePhp.php');
+	session_save_path('../../tmp');
 	session_start();
 	
 	$activity_id =  $_POST['activity_id'];

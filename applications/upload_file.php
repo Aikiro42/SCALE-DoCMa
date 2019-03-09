@@ -1,9 +1,9 @@
 <?php
 
-session_save_path("../tmp");
-session_start();
 include('../config.php');
 include('../ChromePhp.php');
+session_save_path("../tmp");
+session_start();
    
 
 

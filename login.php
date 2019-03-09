@@ -21,6 +21,7 @@
 			
 			if($login_result){
 				//Set session names here
+				session_save_path('\tmp');
 				session_start();
 				$_SESSION['username'] = $username;
 				$_SESSION['password'] = $password;

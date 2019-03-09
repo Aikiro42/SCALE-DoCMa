@@ -11,7 +11,7 @@
 	include('../../ChromePhp.php');
 	
 	ChromePhp::log('Broadcasting from scale/module/submodule/admin_assoc_activities.php');
-	
+	session_save_path('../../tmp');
 	session_start();
 	
 	//4294967295 = largest base 32 number

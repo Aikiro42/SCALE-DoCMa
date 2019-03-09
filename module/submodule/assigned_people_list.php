@@ -2,6 +2,7 @@
 <?php
 
 	include('../../config.php');
+	session_save_path('../../tmp');
 	session_start();
 	
 	$is_admin = $_SESSION['ual_id'] == 1;

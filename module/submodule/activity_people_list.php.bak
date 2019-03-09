@@ -2,6 +2,7 @@
 
 	include('../../config.php');
 	include('../../ChromePhp.php');
+	session_save_path('../../tmp');
 	session_start();
 	
 	ChromePhp::log('Broadcasting from scale/module/submodule/activity_people_list.php');
