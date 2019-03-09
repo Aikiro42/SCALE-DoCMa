@@ -43,7 +43,7 @@
 		</header>
 		
 		<div id="login">
-			<form action="" method="post">
+			<form action="index.php" method="post">
 				<div class="fields">
 					<span class="fieldLabels">
 						Username
