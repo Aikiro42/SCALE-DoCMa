@@ -1,7 +1,8 @@
 <?php
 	
 	include('config.php');
-	
+	include('ChromePhp.php');
+	ChromePhp::log('[Session.php] Log test	');
 	if($deploy_test){
 		include('cleardb-config.php');
 	}

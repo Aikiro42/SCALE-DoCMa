@@ -1,8 +1,10 @@
+/*
 DROP DATABASE IF EXISTS scale;
 
 CREATE DATABASE IF NOT EXISTS scale;
 
 USE scale;
+*/
 
 DROP TABLE IF EXISTS UserAccessLevels;
 DROP TABLE IF EXISTS Users;
@@ -29,12 +31,12 @@ CREATE TABLE Users(
 	username VARCHAR(255) NOT NULL UNIQUE,
 	password VARCHAR(255) NOT NULL,
 	profile_pic VARCHAR(32768),
-	ual_id INT NOT NULL,
+	ual_id INT UNSIGNED NOT NULL,
 	FOREIGN KEY (ual_id) REFERENCES UserAccessLevels(ual_id)
 );
 
 CREATE TABLE Persons(
-	user_id INT NOT NULL,
+	user_id INT UNSIGNED NOT NULL,
 	firstName VARCHAR(255) NOT NULL,
 	lastName VARCHAR(255) NOT NULL,
 	email VARCHAR(255) NULL,
