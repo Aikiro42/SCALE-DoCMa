@@ -1,8 +1,10 @@
 <?php
-   include_once("config.php");
+   include("config.php");
+   include("ChromePhp.php");
    session_start();
    $error = "";
    if($_SERVER["REQUEST_METHOD"] == "POST") {
+	  ChromePhp::log('[index.php] : Request method is "post".');
       // username and password sent from form 
       $myusername = mysqli_real_escape_string($dbc,$_POST['username']);
       $mypassword = mysqli_real_escape_string($dbc,$_POST['password']); 
@@ -13,8 +15,8 @@
       $count = mysqli_num_rows($result);
       
       // If result matched $myusername and $mypassword, table row must be 1 row
-		
       if($count == 1) {
+		 ChromePhp::log('[index.php] : Login credentials match.');
          $_SESSION['login_user'] = $myusername;
          $_SESSION['user_id'] = $row['user_id'];
          header("location: main.php");
