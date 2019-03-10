@@ -28,7 +28,7 @@
    }
 
 echo '<h1>HELLOOO????</h1>';
-   
+  
 ?>
 <html>
 	<head>
@@ -46,7 +46,7 @@ echo '<h1>HELLOOO????</h1>';
 		</header>
 		
 		<div id="login">
-			<form action="index.php" method="post">
+			<form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
 				<div class="fields">
 					<span class="fieldLabels">
 						Username
