@@ -1,11 +1,6 @@
 <?php
 	
 	include('config.php');
-	include('ChromePhp.php');
-	ChromePhp::log('[Session.php] Log test	');
-	if($deploy_test){
-		include('cleardb-config.php');
-	}
 
    //use for ubuntu,
    //may default path ang wamp pero wala ung ubuntu
