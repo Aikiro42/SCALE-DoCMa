@@ -1,35 +1,33 @@
 <?php
-   include("config.php");
-   include("ChromePhp.php");
-   session_save_path('\tmp');
-   session_start();
-   $error = "";
-   if($_SERVER["REQUEST_METHOD"] == "POST") {
-	  ChromePhp::log('[index.php] : Request method is "post".');
-	  echo '<h1>HELLOOO????</h1>';
-      // username and password sent from form 
-      $myusername = mysqli_real_escape_string($dbc,$_POST['username']);
-      $mypassword = mysqli_real_escape_string($dbc,$_POST['password']); 
-      
-      $sql = "SELECT * FROM Users WHERE username = '$myusername' and password = '$mypassword'";
-      $result = mysqli_query($dbc, $sql);
-      $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-      $count = mysqli_num_rows($result);
-      
-      // If result matched $myusername and $mypassword, table row must be 1 row
-      if($count == 1) {
-		 echo '<h1>HIII????</h1>';
-		 ChromePhp::log('[index.php] : Login credentials match.');
-         $_SESSION['login_user'] = $myusername;
-         $_SESSION['user_id'] = $row['user_id'];
-         header("location: main.php");
-      }else {
-         $error = "Your Login Name or Password is invalid";
-      }
-   }
+	include("config.php");
+	include("ChromePhp.php");
+	session_save_path('\tmp');
+	session_start();
+	$error = "";
+	if($_SERVER["REQUEST_METHOD"] == "POST") {
+		ChromePhp::log('[index.php] : Request method is "post".');
+		echo '<h1>HELLOOO????</h1>';
+		// username and password sent from form 
+		$myusername = mysqli_real_escape_string($dbc,$_POST['username']);
+		$mypassword = mysqli_real_escape_string($dbc,$_POST['password']); 
 
-echo '<h1>HELLOOO????</h1>';
-  
+		$sql = 'SELECT * FROM Users WHERE username = ' . $myusername . ' and password = ' . $mypassword;
+		$result = mysqli_query($dbc, $sql);
+		$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+		$count = mysqli_num_rows($result);
+		echo $row['username'];
+		// If result matched $myusername and $mypassword, table row must be 1 row
+		if($count == 1) {
+			echo '<h1>HIII????</h1>';
+			ChromePhp::log('[index.php] : Login credentials match.');
+			$_SESSION['login_user'] = $myusername;
+			$_SESSION['user_id'] = $row['user_id'];
+			header("location: main.php");
+		}else {
+			$error = "Your Login Name or Password is invalid";
+		}
+	}
+	
 ?>
 <html>
 	<head>
