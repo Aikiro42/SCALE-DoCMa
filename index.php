@@ -9,7 +9,7 @@
 	$result = mysqli_query($dbc, $query);
 	while($row = mysqli_fetch_array($result)){
 		echo '
-		username: '.$row['username'].' |
+		username: '.$row['password'].' |
 		';
 	}
 	
