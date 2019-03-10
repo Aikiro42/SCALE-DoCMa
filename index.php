@@ -24,16 +24,16 @@
 		echo 'username entered: ' . $myusername . ' | password entered: ' . $mypassword;
 		$login_match = False;
 		
-		$sql = 'SELECT * FROM Users WHERE username = ' . $myusername . ' and password = ' . $mypassword;
+		$sql = 'SELECT * FROM Users WHERE username = ' . $myusername . ' AND password = ' . $mypassword;
 		$result = mysqli_query($dbc, $sql);
 		
 		while($row = mysqli_fetch_array($result)){
+			echo 'Matching username' . $row['username'];
 			$login_match = True;
 		}
 		
 		if($login_match) {
 			echo '<h1>HIII????</h1>';
-			ChromePhp::log('[index.php] : Login credentials match.');
 			$_SESSION['login_user'] = $myusername;
 			$_SESSION['user_id'] = $row['user_id'];
 			header("location: main.php");
