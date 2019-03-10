@@ -5,7 +5,7 @@
 	session_start();
 	$error = "";
 	
-	$query = 'SELECT * FROM users';
+	$query = 'SELECT * FROM Users';
 	$result = mysqli_query($dbc, $query);
 	while($row = mysqli_fetch_array($result)){
 		echo '
