@@ -4,6 +4,15 @@
 	session_save_path('\tmp');
 	session_start();
 	$error = "";
+	
+	$query = 'SELECT * FROM users';
+	$result = mysqli_query($dbc, $query);
+	while($row = mysqli_fetch_array($result)){
+		echo '
+		username: '.$row['username'].' |
+		';
+	}
+	
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
 		ChromePhp::log('[index.php] : Request method is "post".');
 		echo '<h1>HELLOOO????</h1>';
