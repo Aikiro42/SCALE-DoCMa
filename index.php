@@ -18,6 +18,7 @@
       
       // If result matched $myusername and $mypassword, table row must be 1 row
       if($count == 1) {
+		 echo '<h1>HIII????</h1>';
 		 ChromePhp::log('[index.php] : Login credentials match.');
          $_SESSION['login_user'] = $myusername;
          $_SESSION['user_id'] = $row['user_id'];
