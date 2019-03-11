@@ -15,13 +15,14 @@
 	
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
 		ChromePhp::log('[index.php] : Request method is "post".');
+		echo '<h1>HELLOOO????</h1>';
 		// username and password sent from form 
 		//$myusername = mysqli_real_escape_string($dbc,$_POST['username']);
 		//$mypassword = mysqli_real_escape_string($dbc,$_POST['password']); 
 
 		$myusername = $_POST['username'];
 		$mypassword = $_POST['password'];
-		echo 'username entered: ' . $myusername . ' | password entered: ' . $mypassword;
+		
 		$login_match = False;
 		
 		$sql = 'SELECT * FROM Users WHERE username = ' . $myusername . ' and password = ' . $mypassword;
