@@ -5,7 +5,6 @@
 	
 	ChromePhp::log('Broadcasting from scale/applications/add_activity.php');
 	
-	session_save_path('../tmp');
 	session_start();
 	
 	

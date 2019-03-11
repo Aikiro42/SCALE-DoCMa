@@ -1,7 +1,6 @@
 <?php
 
 	include('../config.php');
-	session_save_path('../tmp');
 	session_start();
 	
 	$username_check = $_POST['username_check'];

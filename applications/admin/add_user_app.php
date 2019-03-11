@@ -5,7 +5,6 @@
 	ChromePhp::log('Broadcasting from scale/applications/admin/add_user_app.php');
 
 	ChromePhp::log('Starting session...');
-	session_save_path('../../tmp');
 	session_start();
 	ChromePhp::log('Session Started.');
 

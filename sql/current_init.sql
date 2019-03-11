@@ -1,10 +1,37 @@
-/*
 DROP DATABASE IF EXISTS scale;
 
 CREATE DATABASE IF NOT EXISTS scale;
 
 USE scale;
-*/
+
+DROP TABLE IF EXISTS UserAccessLevels;
+DROP TABLE IF EXISTS Users;
+DROP TABLE IF EXISTS Persons;
+DROP TABLE IF EXISTS Activities;
+DROP TABLE IF EXISTS Formtypes;
+DROP TABLE IF EXISTS Outcomes;
+DROP TABLE IF EXISTS Forms;
+DROP TABLE IF EXISTS Versions;
+DROP TABLE IF EXISTS Affiliations;
+DROP TABLE IF EXISTS ActivityUserAssoc;
+DROP TABLE IF EXISTS ActivityProgress;
+DROP TABLE IF EXISTS AuditTrailLog;
+
+
+CREATE TABLE UserAccessLevels(
+	ual_id INT UNSIGNED NOT NULL PRIMARY KEY,
+	name VARCHAR(255) NOT NULL,
+	permission BOOLEAN NOT NULL
+);
+
+CREATE TABLE Users(
+	user_id INT UNSIGNED NOT NULL PRIMARY KEY,
+	username VARCHAR(255) NOT NULL UNIQUE,
+	password VARCHAR(255) NOT NULL,
+	profile_pic VARCHAR(32768),
+	ual_id INT NOT NULL,
+	FOREIGN KEY (ual_id) REFERENCES UserAccessLevels(ual_id)
+);
 
 CREATE TABLE Persons(
 	user_id INT NOT NULL,
@@ -14,32 +41,6 @@ CREATE TABLE Persons(
 	mobile_number LONG NULL,
 	residency_address VARCHAR(512) NULL,
 	FOREIGN KEY (user_id) REFERENCES Users(user_id)
-);
-
-CREATE TABLE Users(
-	user_id INT UNSIGNED NOT NULL PRIMARY KEY,
-	username VARCHAR(255) NOT NULL UNIQUE,
-	password VARCHAR(255) NOT NULL,
-	profile_pic VARCHAR(32768),
-	ual_id INT UNSIGNED NOT NULL,
-	FOREIGN KEY (ual_id) REFERENCES UserAccessLevels(ual_id)
-);
-
-<<<<<<< HEAD
-CREATE TABLE Persons(
-	user_id INT UNSIGNED NOT NULL,
-	firstName VARCHAR(255) NOT NULL,
-	lastName VARCHAR(255) NOT NULL,
-	email VARCHAR(255) NULL,
-	mobile_number LONG NULL,
-	residency_address VARCHAR(512) NULL,
-	FOREIGN KEY (user_id) REFERENCES Users(user_id)
-=======
-CREATE TABLE UserAccessLevels(
-	ual_id INT UNSIGNED NOT NULL PRIMARY KEY,
-	name VARCHAR(255) NOT NULL,
-	permission BOOLEAN NOT NULL
->>>>>>> parent of 7c09f9f... Deployment to Heroku
 );
 
 CREATE TABLE Activities(

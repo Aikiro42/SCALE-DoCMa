@@ -1,19 +1,16 @@
 <?php
 	
 	include('config.php');
-	include('ChromePhp.php');
-	ChromePhp::log('[Session.php] Log test	');
+	
 	if($deploy_test){
 		include('cleardb-config.php');
 	}
 
-<<<<<<< HEAD
    //use for ubuntu,
    //may default path ang wamp pero wala ung ubuntu
-   session_save_path('\tmp');
-=======
->>>>>>> parent of 7c09f9f... Deployment to Heroku
+   //session_save_path('../tmp');
    session_start();
+   
    
    $user_check = $_SESSION['login_user'];
    

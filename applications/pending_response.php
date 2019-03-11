@@ -2,7 +2,6 @@
 
 include('../config.php');
 include('../ChromePhp.php');
-session_save_path('../tmp');
 session_start();
 $form_id = $_POST['form_id'];
 $pending_response = $_POST['pending_response'];

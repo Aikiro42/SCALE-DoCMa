@@ -5,7 +5,6 @@
 		<div id="profile_info_button">Show Profile Info</div>
 		<?php
 		include('../config.php');
-		session_save_path('../tmp');
 		session_start();
 		
 		$query = "SELECT * FROM persons WHERE persons.user_id = ".$_SESSION['user_id'];

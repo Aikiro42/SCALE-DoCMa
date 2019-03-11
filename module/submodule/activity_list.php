@@ -3,7 +3,6 @@
 	
 include('../../config.php');
 include('../../ChromePhp.php');
-session_save_path('../../tmp');
 session_start();
 
 ChromePhp::log('Broadcasting from activity_list.php');

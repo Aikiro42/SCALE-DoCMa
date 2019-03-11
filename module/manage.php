@@ -6,7 +6,7 @@
 		<?php
 		
 		include('config.php');
-		session_save_path('\tmp');
+		
 		session_start();
 		$query = "SELECT * FROM ActivityUserAssoc WHERE user_id = " . $_SESSION['user_id'];
 		$result = mysqli_query($dbc, $query);
