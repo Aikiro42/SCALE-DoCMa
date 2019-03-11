@@ -24,7 +24,7 @@
 		echo 'username entered: ' . $myusername . ' | password entered: ' . $mypassword;
 		$login_match = False;
 		
-		$sql = 'SELECT * FROM Users WHERE username = \'' . $myusername . '\' AND password = \'' . $mypassword . '\'';
+		$sql = 'SELECT * FROM Users WHERE username = ' . $myusername . ' AND password = ' . $mypassword;
 		$result = mysqli_query($dbc, $sql);
 		
 		while($row = mysqli_fetch_array($result)){
