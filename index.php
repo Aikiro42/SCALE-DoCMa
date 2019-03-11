@@ -17,22 +17,16 @@
 		ChromePhp::log('[index.php] : Request method is "post".');
 		echo '<h1>HELLOOO????</h1>';
 		// username and password sent from form 
-		//$myusername = mysqli_real_escape_string($dbc,$_POST['username']);
-		//$mypassword = mysqli_real_escape_string($dbc,$_POST['password']); 
+		$myusername = mysqli_real_escape_string($dbc,$_POST['username']);
+		$mypassword = mysqli_real_escape_string($dbc,$_POST['password']); 
 
-		$myusername = $_POST['username'];
-		$mypassword = $_POST['password'];
-		
-		$login_match = False;
-		
 		$sql = 'SELECT * FROM Users WHERE username = ' . $myusername . ' and password = ' . $mypassword;
 		$result = mysqli_query($dbc, $sql);
-		
-		while($row = mysqli_fetch_array($result)){
-			$login_match = True;
-		}
-		
-		if($login_match) {
+		$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+		$count = mysqli_num_rows($result);
+		echo $row['username'];
+		// If result matched $myusername and $mypassword, table row must be 1 row
+		if($count == 1) {
 			echo '<h1>HIII????</h1>';
 			ChromePhp::log('[index.php] : Login credentials match.');
 			$_SESSION['login_user'] = $myusername;
