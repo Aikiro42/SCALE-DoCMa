@@ -31,25 +31,14 @@
 		var post_activity_type = "<?php echo $activity_type?>";
 	</script>
 	<script src="js/module/submodule/activity_management.js"></script>
-	
-	<?php
-	
-		if($is_leader || !$is_soloist){
-			echo '
-						
-				
-				<div id="manage_people_container">
-					<h2 id="manage_people_button">Manage Involved People</h2>
-					<div id="manage_people_content">
-					</div>
-				</div>
-			
-			';
-		}
-	
-	?>
 
-	
+	<div id="manage_people_container">
+		<h2 id="manage_people_button">Manage Involved People</h2>
+		<div id="manage_people_content">
+		</div>
+	</div>
+
+
 	<div id="submit_buttons">
 		
 		<h2>Submit</h2>
