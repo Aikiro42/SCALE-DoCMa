@@ -1,12 +1,20 @@
+<?php
+	include('../config.php');
+	session_start();
+?>
 <div class="moduleWrapper" id="profile_module">
 	<h1>My Profile</h1>
 	<div id="userInfo">
 		<a id="logout_button" href="logout.php">Log out</a>
-		<div id="profile_info_button">Show Profile Info</div>
-		<?php
-		include('../config.php');
-		session_start();
 		
+		<?php
+		
+		if($_SESSION['ual_id'] > 3){
+			echo '
+				<div id="profile_info_button">Show Profile Info</div>
+			';
+		};
+	
 		$query = "SELECT * FROM persons WHERE persons.user_id = ".$_SESSION['user_id'];
 		$result = mysqli_query($dbc, $query);
 		$name = $email = $profile_pic = $user_id = $ual_id = '';
