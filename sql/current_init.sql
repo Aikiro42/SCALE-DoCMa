@@ -203,7 +203,7 @@ VALUES
 (1301158, '13-01158', '13-01158', 'img/default.jpg', 4),
 (1301178, '13-01178', '13-01178', 'img/default.jpg', 4),
 (1301132, '13-01132', '13-01132', 'img/default.jpg', 4),
-(1301147, '13-01147', '13-01147', 'img/default.jpg', 4);
+(1301147, '13-01147', '13-01147', 'img/default.jpg', 4),
 (1301104, '13-01104', '13-01104', 'img/mario.jpg', 4);
 
 
@@ -245,5 +245,5 @@ VALUES
 (1301158, 'Licca C.', 'Melana', 'lcmelana@gmail.com', 1234567890, 'This is the test residency address.'),
 (1301178, 'Jovelle G.', 'Salva', 'jgsalva@gmail.com', 1234567890, 'This is the test residency address.'),
 (1301132, 'Dianna Jean N.', 'Daguro', 'djndaguro@gmail.com', 1234567890, 'This is the test residency address.'),
-(1301147, 'Aelohim Jesukristien O.', 'Imperial', 'ajoimperial@gmail.com', 1234567890, 'This is the test residency address.');
+(1301147, 'Aelohim Jesukristien O.', 'Imperial', 'ajoimperial@gmail.com', 1234567890, 'This is the test residency address.'),
 (1301104, 'Enrique Luis P.', 'Alvarado', 'elpalvarado@gmail.com', 9278545094, 'Sa puso mo');
