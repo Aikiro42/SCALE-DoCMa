@@ -9,7 +9,9 @@
 		
 		<?php
 		
-		if($_SESSION['ual_id'] > 3){
+		$is_student = $_SESSION['ual_id'] > 3;
+		
+		if($is_student){
 			echo '
 				<div id="profile_info_button">Show Achieved Strands</div>
 			';
@@ -44,10 +46,22 @@
 		</div>
 	</div>
 	
-	<div id="action_buttons">
-		<div class="butt" id="propose_activity">Propose Activity</div>
-		<div class="butt" id="request_collab">Request Collab</div>
-	</div>
+	<?php
+	
+		if(!$is_student){
+			echo '
+				
+				<div id="action_buttons">
+					<div class="butt" id="propose_activity">Propose Activity</div>
+					<div class="butt" id="request_collab">Request Collab</div>
+				</div>
+				
+			';
+		}
+	
+	?>
+	
+	
 	
 	
 	<!--loads pending_actions.php-->
