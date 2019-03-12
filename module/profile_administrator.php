@@ -11,7 +11,7 @@
 		
 		if($_SESSION['ual_id'] > 3){
 			echo '
-				<div id="profile_info_button">Show Profile Info</div>
+				<div id="profile_info_button">Show Achieved Strands</div>
 			';
 		};
 	
