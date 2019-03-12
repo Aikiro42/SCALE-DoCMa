@@ -48,12 +48,12 @@
 	
 	<?php
 	
-		if(!$is_student){
+		if($is_student){
 			echo '
 				
 				<div id="action_buttons">
 					<div class="butt" id="propose_activity">Propose Activity</div>
-					<div class="butt" id="request_collab">Request Collab</div>
+					<!--<div class="butt" id="request_collab">Request Collab</div>-->
 				</div>
 				
 			';
