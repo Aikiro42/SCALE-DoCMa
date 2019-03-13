@@ -67,8 +67,10 @@ div.moduleWrapper div#userInfo a#logout_button:active, div#profile_info_button:a
 div.moduleWrapper div#pendingActions, div#AssocActivities{
 	margin: 1%;
 	border: 1px solid var(--border-2);
-	border-radius: 25px;
+	border-radius: 5px;
 	padding: 1%;
+	height: 75%;
+	overflow-y: scroll;
 }
 
 div.moduleWrapper div#action_buttons{

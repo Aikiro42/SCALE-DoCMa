@@ -1,6 +1,6 @@
 <h1>Pending Actions</h1>
 <div id="pendingActions">
-<p id="refresh_pending_actions">Refresh</p>
+<p id="refresh_pending_actions" class="refresh-button">Refresh</p>
 <script src="js/module/submodule/refresh_pending_actions_handler.js"></script>
 
 	<!--
@@ -21,7 +21,14 @@
 		session_start();
 		
 		//for each associated activity
+		
+		
 		$query = "SELECT * FROM ActivityUserAssoc WHERE ActivityUserAssoc.user_id = ".$_SESSION['user_id'];
+		
+		if($_SESSION['ual_id'] == 1){
+			$query = "SELECT * FROM ActivityUserAssoc";
+		}
+		
 		$result = mysqli_query($dbc, $query);
 		while($row = mysqli_fetch_array($result)){
 			$form_name = $form_type= '';

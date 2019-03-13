@@ -1,7 +1,7 @@
 <h1>Administrative Activity Manager</h1>
 <!--admin_assoc_activities.php-->
 <div id="AssocActivities">
-<p id="refresh_assoc_activities">Refresh</p>
+<p id="refresh_assoc_activities" class="refresh-button">Refresh</p>
 <script src="js/module/submodule/refresh_admin_assoc_activities_handler.js"></script>
 
 	<?php
