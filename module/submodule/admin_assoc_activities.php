@@ -24,7 +24,6 @@
 		$activity = $row['activity_name'];
 		$activity_id = $row['activity_id'];
 		
-		
 		$progress_checklist_button_element = '';
 		
 		if($_SESSION['ual_id'] == 2 || $_SESSION['ual_id'] == 1){
