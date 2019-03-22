@@ -69,7 +69,7 @@ div.moduleWrapper div#pendingActions, div#AssocActivities{
 	border: 1px solid var(--border-2);
 	border-radius: 5px;
 	padding: 1%;
-	height: 75%;
+	height: 100%;
 	overflow-y: scroll;
 }
 
