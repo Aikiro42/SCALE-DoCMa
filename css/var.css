@@ -192,4 +192,13 @@
 	--deny-button-active: var(--red-active);
 	--deny-button-text-active: white;
 	
+	--logout-button: var(--red);
+	--logout-button-text: white;
+	
+	--logout-button-hover: var(--red-hover);
+	--logout-button-text-hover: white;
+	
+	--logout-button-active: var(--red-active);
+	--logout-button-text-active: white;
+	
 }

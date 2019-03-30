@@ -32,6 +32,29 @@ header img#burger-button:active{
 	background: var(--dark-blue);
 }
 
+header a#logout-button{
+	background: var(--logout-button);
+	color: var(--logout-button-text);
+	float: right;
+	margin: 15px;
+	padding: 0 10px;
+	height: 45px;
+	line-height: 45px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: var(--transition);
+	border-radius: 10px;
+}
+
+header a#logout-button:hover{
+	background: var(--logout-button-hover);
+	color: var(--logout-button-text-hover);
+}
+
+header a#logout-button:active{
+	background: var(--logout-button-active);
+	color: var(--logout-button-text-active);
+}
 
 
 ul#navpane{

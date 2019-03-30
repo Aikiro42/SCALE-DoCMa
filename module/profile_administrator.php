@@ -5,7 +5,7 @@
 <div class="moduleWrapper" id="profile_module">
 	<h1>My Profile</h1>
 	<div id="userInfo">
-		<a id="logout_button" href="logout.php">Log out</a>
+		<!--<a id="logout_button" href="logout.php">Log out</a>-->
 		
 		<?php
 		

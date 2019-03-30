@@ -125,6 +125,7 @@
 
 			<header>
 				<img id="burger-button" src="img/burger-button-white.png"/>
+				<a id="logout-button" href="logout.php">Log out</a>
 				<h1>SCALE DoCMa</h1>
 			</header>
 
