@@ -120,8 +120,12 @@
 	--profile-info-box-color: black;
 	--profile-info-box-background: white;
 	--profile-info-box-font-family: "Consolas", monospace;
+	
 	--profile-info-achieved-box-color: white;
 	--profile-info-achieved-box-background: var(--green);
+	
+	--profile-info-pending-box-color: black;
+	--profile-info-pending-box-background: var(--gold);
 	
 	--activity-item-border: var(--light-gray);
 	--activity-item: white;

@@ -11,27 +11,18 @@ $(function(){
 	}
 	
 	//user information button
-	$("#profile_information").slideUp(0);
 	$("#profile_info_button").click(function(){
 		//activateWall(500);
 		$.ajax({
 			url: 'module/submodule/profile_information.php',
 			success: function(data){
+				activateWall(500);
 				var info_cont = $("#profile_information");
-				var toggle_button = $("#profile_info_button");
 				info_cont.html(data);
-				if(info_cont.css("display") == "none"){
-					toggle_button.html("Hide Profile Info");
-					info_cont.slideDown();
-				}else{
-					toggle_button.html("Show Profile Info");
-					info_cont.slideUp();
-				}
-				
-				//deactivateWall(500);
+				deactivateWall(500);
 			},
 			error: onError
-		})
+		});
 	});
 	
 	$("div#propose_activity").click(function(){
@@ -48,5 +39,13 @@ $(function(){
 
 	});	
 	
+	$.ajax({
+		url: 'module/submodule/profile_information.php',
+		success: function(data){
+			var info_cont = $("#profile_information");
+			info_cont.html(data);
+		},
+		error: onError
+	});
 		
 });

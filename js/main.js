@@ -69,7 +69,6 @@ function trail_log(info){
 
 $(function(){
 	
-	$('ul#navpane').animate({width: 'toggle'}, 0);
 	//shows or hides the navpane
 	$('img#burger-button').off().click(function(){
 		$('ul#navpane').animate({width: 'toggle'}, 100);

@@ -63,7 +63,7 @@ ul#navpane{
 	margin: 0;
 }
 
-ul#navpane li{
+ul#navpane li, a#logout-button-li{
 	background: var(--button);
 	color: var(--button-text);
 	font-size: 1.5em;
@@ -71,7 +71,6 @@ ul#navpane li{
 	padding: 1% 3%;
 	cursor: pointer;
 	transition: var(--transition);
-
 }
 
 ul#navpane li:hover{
@@ -83,6 +82,24 @@ ul#navpane li:active{
 	color: var(--button-text-active);
 	background: var(--button-active);
 }
+
+ul#navpane a#logout-button-li{
+	display: block;
+	background: var(--logout-button);
+	color: var(--logout-button-text);
+}
+
+ul#navpane a#logout-button-li:hover{
+	background: var(--logout-button-hover);
+	color: var(--logout-button-text-hover);
+}
+
+ul#navpane a#logout-button-li:active{
+	background: var(--logout-button-active);
+	color: var(--logout-button-text-active);
+}
+
+
 
 div#navWrapper{
 	width: 100%;

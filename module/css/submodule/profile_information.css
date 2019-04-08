@@ -21,9 +21,13 @@ div.moduleWrapper#profile_module div#profile_info_cont div.achieved_box_containe
 }
 
 div.moduleWrapper#profile_module div#profile_info_cont div.achieved_box_container h3.achieved_box.achieved{
-	
 	color: var(--profile-info-achieved-box-color);
 	background: var(--profile-info-achieved-box-background);
+}
+
+div.moduleWrapper#profile_module div#profile_info_cont div.achieved_box_container h3.achieved_box.pending{
+	color: var(--profile-info-pending-box-color);
+	background: var(--profile-info-pending-box-background);
 }
 
 div.moduleWrapper#profile_module div#profile_info_cont div.achieved_box_container span.achieved_box_label{

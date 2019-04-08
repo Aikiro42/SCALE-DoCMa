@@ -100,44 +100,45 @@
 	<div id="anti_interaction_wall">
 		<h1>Loading...</h1>
 	</div>
+	
 	<!--==================================================-->
 
 	<div id="wrapper">
-	<div id="flex-wrapper">
-		<ul id="navpane">
-			<li id="profile_administrator">My Profile</li>
-			<li id="download">Downloadable Forms</li>
-			<?php
-				if($ual_id == 1){
-					echo '
+		<div id="flex-wrapper">
+			<ul id="navpane"  style="display: none;">
+				<li id="profile_administrator">My Profile</li>
+				<li id="download">Downloadable Forms</li>
+				<?php
+					if($ual_id == 1){
+						echo '
 
-						<li id="administrative">Administrative</li>
+							<li id="administrative">Administrative</li>
 
-					';
-				}
-			?>
-			<li id="people">People</li>
-			<li id="activities">Activities</li>
-			<li id="about">About</li>
-		</ul>
+						';
+					}
+				?>
+				<li id="people">People</li>
+				<li id="activities">Activities</li>
+				<li id="about">About</li>
+				<a id="logout-button-li" href="logout.php">Log out</a>
+			</ul>
 
-		<div id="header-body-container">
+			<div id="header-body-container">
 
-			<header>
-				<img id="burger-button" src="img/burger-button-white.png"/>
-				<a id="logout-button" href="logout.php">Log out</a>
-				<h1>SCALE DoCMa</h1>
-			</header>
+				<header>
+					<img id="burger-button" src="img/burger-button-white.png"/>
+					<a id="logout-button" href="logout.php">Log out</a>
+					<h1>SCALE DoCMa</h1>
+				</header>
 
-			<div id="moduleContainer">
-				<!--contains the modules loaded by jquery-->
+				<div id="moduleContainer">
+					<!--contains the modules loaded by jquery-->
+				</div>
+
 			</div>
-
 		</div>
 	</div>
-
-
-	</div>
+	
 	<script>
 
 	function remind_me(){
@@ -149,11 +150,6 @@
 			+'\n [!] Function Limitations'
 			+'\n [!] Cross-User Interaction'
 
-			+'\n Downloadable Forms Bug'
-			+'\n edit user'
-			+'\n Form-Activity Approval System'
-			+'\n Form Samples'
-
 			+'\n UI - dont curve the border corneres too much'
 
 			+'\n\n Optional:'
@@ -161,7 +157,6 @@
 			+'\n About tab'
 			+'\n Privacy Policy'
 			+'\n Audit Trail Log'
-			+'\n Remove custom user id, default autogen id'
 
 			+'\n "FPDF" autofill api'
 			+'\n Fix Animations'
@@ -195,10 +190,7 @@
 
 	Disclaimer: The Docma is for the collection of forms and for visual interface that will help people involved in the SCALE
 	program manage their activities and achievements.
-	
-	
-	
-	
+
 	MySQL: Encrypt passwords
 
 	*/

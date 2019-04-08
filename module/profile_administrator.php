@@ -10,10 +10,11 @@
 		<?php
 		
 		$is_student = $_SESSION['ual_id'] > 3;
-		
+
 		if($is_student){
 			echo '
-				<div id="profile_info_button">Show Achieved Strands</div>
+				<div class="profile_button" id="profile_info_button">Refresh Achieved Strands</div>
+				<div class="profile_button" id="propose_activity">Propose Activity</div>
 			';
 		};
 	
@@ -42,24 +43,22 @@
 		<p id="user_id"><span class="user_cred_label">User ID: </span> <?php echo $user_id;?></p>
 		<p id="ual_name"><span class="user_cred_label">Access Level: </span> <?php echo $ual_name;?></p>
 		<div class="clear"></div>
-		<div id="profile_information">
-		</div>
-	</div>
-	
-	<?php
-	
+		
+		<?php
+		
 		if($is_student){
 			echo '
-				
-				<div id="action_buttons">
-					<div class="butt" id="propose_activity">Propose Activity</div>
-					<!--<div class="butt" id="request_collab">Request Collab</div>-->
+				<div id="profile_information">
 				</div>
-				
 			';
-		}
+		};
+		
+		?>
+		
+		
+	</div>
 	
-	?>
+
 	
 	
 	

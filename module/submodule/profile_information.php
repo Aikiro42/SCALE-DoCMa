@@ -16,11 +16,40 @@
 	$o7_achieved =
 	$o8_achieved = "";
 	
-	
+	$query = "SELECT * FROM ActivityUserAssoc WHERE user_id = " . $user_id;
+	$result = mysqli_query($dbc, $query);
+	while($row = mysqli_fetch_array($result)){
+		
+		//check pending
+		
+		$is_activity_leader = $row['aff_id'] == 5;
+		$sub_query = "SELECT * FROM Activities WHERE activity_id = " . $row['activity_id'];
+		$sub_result = mysqli_query($dbc, $sub_query);
+		$sub_row = mysqli_fetch_array($sub_result);
+		
+		if($sub_row['strand_service']) $service_achieved = "pending";
+		if($sub_row['strand_creativity']) $creativity_achieved = "pending";
+		if($sub_row['strand_action']) $action_achieved = "pending";
+		if($sub_row['strand_leadership'] && $is_activity_leader) $leadership_achieved = "pending";
+		
+		if($sub_row['outcome_1']) $o1_achieved = "pending";
+		if($sub_row['outcome_2']) $o2_achieved = "pending";
+		if($sub_row['outcome_3']) $o3_achieved = "pending";
+		if($sub_row['outcome_4']) $o4_achieved = "pending";
+		if($sub_row['outcome_5']) $o5_achieved = "pending";
+		if($sub_row['outcome_6']) $o6_achieved = "pending";
+		if($sub_row['outcome_7']) $o7_achieved = "pending";
+		if($sub_row['outcome_8']) $o8_achieved = "pending";
+		
+		
+	}
 	
 	$query = "SELECT * FROM ActivityUserAssoc WHERE user_id = " . $user_id;
 	$result = mysqli_query($dbc, $query);
 	while($row = mysqli_fetch_array($result)){
+		
+		//check achieved
+		
 		$is_activity_leader = $row['aff_id'] == 5;
 		$sub_query = "SELECT * FROM ActivityProgress WHERE activity_id = " . $row['activity_id'];
 		$sub_result = mysqli_query($dbc, $sub_query);
